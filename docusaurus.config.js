@@ -69,7 +69,7 @@ const config = {
         title: 'Dnevend',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'https://github.com/Dnevend.png',
         },
         items: [
           {
