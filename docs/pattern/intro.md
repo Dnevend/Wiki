@@ -3,6 +3,14 @@ sidebar_position: 1
 tags: [pattern]
 ---
 
+## QA
+
+### 设计模式的概念起源和发展是什么?
+
+### 设计模式可以根据场景/用途怎么进行分类?
+
+## 引用参考
+
 [《JavaScript 设计模式与开发实践》](https://awesome-programming-books.github.io/javascript/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5.pdf)
 
 [汪图南 - JavaScript 设计模式与开发实践](https://wangtunan.github.io/blog/designPattern/)
