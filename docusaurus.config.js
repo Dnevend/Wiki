@@ -79,6 +79,7 @@ const config = {
             label: 'Wiki',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/about', label: 'About', position: 'left' },
           {
             href: 'https://github.com/Dnevend',
             label: 'GitHub',
