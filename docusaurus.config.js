@@ -52,6 +52,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // TODO: https://docusaurus.io/zh-CN/docs/blog#feed
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
