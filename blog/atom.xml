@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://your-docusaurus-test-site.com/blog</id>
     <title>小学後生 Blog</title>
-    <updated>2023-11-12T09:20:49.000Z</updated>
+    <updated>2023-11-12T09:43:26.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://your-docusaurus-test-site.com/blog"/>
     <subtitle>小学後生 Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[思想审计]]></title>
         <id>https://your-docusaurus-test-site.com/blog/mind-audit</id>
         <link href="https://your-docusaurus-test-site.com/blog/mind-audit"/>
-        <updated>2023-11-12T09:20:49.000Z</updated>
+        <updated>2023-11-12T09:43:26.000Z</updated>
         <summary type="html"><![CDATA[总是经历过许多大小的事件, 回头看, 可以有一些对当时的评价, 自己的原则思想发生了什么变化.]]></summary>
         <content type="html"><![CDATA[<p>总是经历过许多大小的事件, 回头看, 可以有一些对当时的评价, 自己的原则思想发生了什么变化.</p><p>TODO:</p>]]></content>
         <author>
@@ -24,7 +24,7 @@
         <title type="html"><![CDATA[我所理解的斯多葛主义]]></title>
         <id>https://your-docusaurus-test-site.com/blog/stoicism-with-me</id>
         <link href="https://your-docusaurus-test-site.com/blog/stoicism-with-me"/>
-        <updated>2023-11-12T09:20:49.000Z</updated>
+        <updated>2023-11-12T09:43:26.000Z</updated>
         <summary type="html"><![CDATA[将"佛系"导向哲学: 我所理解的斯多葛主义]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="将佛系导向哲学-我所理解的斯多葛主义">将"佛系"导向哲学: 我所理解的斯多葛主义<a href="#将佛系导向哲学-我所理解的斯多葛主义" class="hash-link" aria-label="将&quot;佛系&quot;导向哲学: 我所理解的斯多葛主义的直接链接" title="将&quot;佛系&quot;导向哲学: 我所理解的斯多葛主义的直接链接">​</a></h2><p>一个稍微幼稚阶段时常常以佛系自我定位的自己, 成长些许时日后, 如何从斯多葛主义, 再重新审视当年的自己.</p><p>TODO:</p>]]></content>
         <author>
@@ -37,7 +37,7 @@
         <title type="html"><![CDATA[唐诗之路]]></title>
         <id>https://your-docusaurus-test-site.com/blog/the-road-of-tang-poetry</id>
         <link href="https://your-docusaurus-test-site.com/blog/the-road-of-tang-poetry"/>
-        <updated>2023-11-12T09:20:49.000Z</updated>
+        <updated>2023-11-12T09:43:26.000Z</updated>
         <summary type="html"><![CDATA[19 年大暑做了个冲动的年轻人, 驱车游历了一趟自己的唐诗之路.]]></summary>
         <content type="html"><![CDATA[<p>19 年大暑做了个冲动的年轻人, 驱车游历了一趟自己的唐诗之路.</p><p>TODO:</p>]]></content>
         <author>
@@ -50,7 +50,7 @@
         <title type="html"><![CDATA[写在第XXX公里]]></title>
         <id>https://your-docusaurus-test-site.com/blog/write-in-xxx-km</id>
         <link href="https://your-docusaurus-test-site.com/blog/write-in-xxx-km"/>
-        <updated>2023-11-12T09:20:49.000Z</updated>
+        <updated>2023-11-12T09:43:26.000Z</updated>
         <summary type="html"><![CDATA[跑了这么多年的步, 总是可以写点什么的.]]></summary>
         <content type="html"><![CDATA[<p>跑了这么多年的步, 总是可以写点什么的.</p><p>缘起
 经历
