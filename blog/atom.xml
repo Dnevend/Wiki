@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://your-docusaurus-test-site.com/blog</id>
     <title>小学後生 Blog</title>
-    <updated>2023-11-12T09:43:26.000Z</updated>
+    <updated>2023-11-12T10:33:19.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://your-docusaurus-test-site.com/blog"/>
     <subtitle>小学後生 Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[思想审计]]></title>
         <id>https://your-docusaurus-test-site.com/blog/mind-audit</id>
         <link href="https://your-docusaurus-test-site.com/blog/mind-audit"/>
-        <updated>2023-11-12T09:43:26.000Z</updated>
+        <updated>2023-11-12T10:33:19.000Z</updated>
         <summary type="html"><![CDATA[总是经历过许多大小的事件, 回头看, 可以有一些对当时的评价, 自己的原则思想发生了什么变化.]]></summary>
         <content type="html"><![CDATA[<p>总是经历过许多大小的事件, 回头看, 可以有一些对当时的评价, 自己的原则思想发生了什么变化.</p><p>TODO:</p>]]></content>
         <author>
@@ -24,7 +24,7 @@
         <title type="html"><![CDATA[我所理解的斯多葛主义]]></title>
         <id>https://your-docusaurus-test-site.com/blog/stoicism-with-me</id>
         <link href="https://your-docusaurus-test-site.com/blog/stoicism-with-me"/>
-        <updated>2023-11-12T09:43:26.000Z</updated>
+        <updated>2023-11-12T10:33:19.000Z</updated>
         <summary type="html"><![CDATA[将"佛系"导向哲学: 我所理解的斯多葛主义]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="将佛系导向哲学-我所理解的斯多葛主义">将"佛系"导向哲学: 我所理解的斯多葛主义<a href="#将佛系导向哲学-我所理解的斯多葛主义" class="hash-link" aria-label="将&quot;佛系&quot;导向哲学: 我所理解的斯多葛主义的直接链接" title="将&quot;佛系&quot;导向哲学: 我所理解的斯多葛主义的直接链接">​</a></h2><p>一个稍微幼稚阶段时常常以佛系自我定位的自己, 成长些许时日后, 如何从斯多葛主义, 再重新审视当年的自己.</p><p>TODO:</p>]]></content>
         <author>
@@ -37,9 +37,26 @@
         <title type="html"><![CDATA[唐诗之路]]></title>
         <id>https://your-docusaurus-test-site.com/blog/the-road-of-tang-poetry</id>
         <link href="https://your-docusaurus-test-site.com/blog/the-road-of-tang-poetry"/>
-        <updated>2023-11-12T09:43:26.000Z</updated>
+        <updated>2023-11-12T10:33:19.000Z</updated>
         <summary type="html"><![CDATA[19 年大暑做了个冲动的年轻人, 驱车游历了一趟自己的唐诗之路.]]></summary>
         <content type="html"><![CDATA[<p>19 年大暑做了个冲动的年轻人, 驱车游历了一趟自己的唐诗之路.</p><p>TODO:</p>]]></content>
+        <author>
+            <name>小学后生</name>
+            <uri>https://dnevend.github.io</uri>
+        </author>
+        <category label="article" term="article"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[为什么要写博客]]></title>
+        <id>https://your-docusaurus-test-site.com/blog/why-i-write</id>
+        <link href="https://your-docusaurus-test-site.com/blog/why-i-write"/>
+        <updated>2023-11-12T10:33:19.000Z</updated>
+        <summary type="html"><![CDATA[写博客的念头在多年前就已经萌生, 并付出了一些实践, 但每次总是在选择博客的平台、折腾输出软件和写博客的方式上, 渐行渐远, 偏离了本质.]]></summary>
+        <content type="html"><![CDATA[<p>写博客的念头在多年前就已经萌生, 并付出了一些实践, 但每次总是在选择博客的平台、折腾输出软件和写博客的方式上, 渐行渐远, 偏离了本质.
+走了这么多弯路, 为什么又重新开始写起了博客?</p><p>TODO:</p><ul><li><p>走过的“弯路”</p><p>Notion、Eleventy、自建站点、其他</p></li><li><p>关于内容我在害怕什么?</p><p>害怕思想的不成熟, 怯于糟糕的文笔, 担心内容的质量.</p></li><li><p>天下文章一大抄...</p></li><li><p>输出的方式?</p><p>先确定主题, 再逐渐补充内容. 所有文章并不是一蹴而就, 往往需要多次的思考沉淀. 不妨先命题, 正如此文一样.</p></li><li><p>得到
+复盘总结
+思路的重新整理, 心理路程的重走
+他人的获得</p></li></ul>]]></content>
         <author>
             <name>小学后生</name>
             <uri>https://dnevend.github.io</uri>
@@ -50,7 +67,7 @@
         <title type="html"><![CDATA[写在第XXX公里]]></title>
         <id>https://your-docusaurus-test-site.com/blog/write-in-xxx-km</id>
         <link href="https://your-docusaurus-test-site.com/blog/write-in-xxx-km"/>
-        <updated>2023-11-12T09:43:26.000Z</updated>
+        <updated>2023-11-12T10:33:19.000Z</updated>
         <summary type="html"><![CDATA[跑了这么多年的步, 总是可以写点什么的.]]></summary>
         <content type="html"><![CDATA[<p>跑了这么多年的步, 总是可以写点什么的.</p><p>缘起
 经历
