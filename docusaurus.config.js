@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Dnevend',
-  tagline: 'Dinosaurs are cool',
+  title: '小学後生',
+  tagline: '“能少做一份懦夫, 就多充一份勇士; 能表白一下真我, 就少带一次假面.”  --李敖',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

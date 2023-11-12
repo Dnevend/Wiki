@@ -1,50 +1,54 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Wiki',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        沉淀日常的技术和知识. 不免于模仿, 但总是在消化后才成文章.
       </>
     ),
+    linkTo: '/docs/intro'
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Blog',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        一些过往的记录和闲言碎语加上一些技术的输出. 往日害怕于思想和文字水平的不成熟, 迟迟不肯动笔,
+        想来, 这是每个阶段真实的自己, 用不着逃避, 些许时日以后, 再回看当时的想法, 或许会有不同的感受.
       </>
     ),
+    linkTo: '/blog'
   },
   {
-    title: 'Powered by React',
+    title: 'About',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        这里可以认识一个具体的我.
       </>
     ),
+    linkTo: '/about'
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description, linkTo }) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
+      <Link to={linkTo}>
+        <div className="text--center">
+          <Svg className={styles.featureSvg} role="img" />
+        </div>
+        <div className="text--center padding-horiz--md">
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
+      </Link>
     </div>
   );
 }
