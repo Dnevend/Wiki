@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[8471],{2677:s=>{s.exports=JSON.parse('{"label":"css","permalink":"/wiki/docs/tags/css","allTagsPath":"/wiki/docs/tags","count":1,"items":[{"id":"css/intro","title":"intro","description":"less","permalink":"/wiki/docs/css/intro"}]}')}}]);

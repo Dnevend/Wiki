@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[3211],{1664:s=>{s.exports=JSON.parse('{"label":"seo","permalink":"/docs/tags/seo","allTagsPath":"/docs/tags","count":1,"items":[{"id":"seo/intro","title":"intro","description":"","permalink":"/docs/seo/intro"}]}')}}]);
