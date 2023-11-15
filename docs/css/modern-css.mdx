@@ -1,0 +1,56 @@
+---
+sidebar_position: 1
+tags: [css]
+---
+
+# 现代 CSS 特性
+
+CSS 在不停迭代许多新的特性, 本文参考 [100 Days Of More Or Less Modern CSS](https://www.matuzo.at/blog/2022/100-days-of-more-or-less-modern-css/) 一起跟上现代 CSS 发展的步伐.
+
+## 特性
+
+### var 函数
+
+```css
+div {
+  background-color: var(--not-set, #000);
+}
+/* 当 --not-set 未定义时, 将默认使用后备参数 */
+/* Result: background-color: #000; */
+```
+
+### min / max 函数
+
+```css
+div {
+  width: min(100%, 800px);
+}
+/* 上面的使用方法等同于下面属性的较短版本 */
+div {
+  width: 100%;
+  max-width: 800px;
+}
+```
+
+### inset 属性
+
+inset 属性是 top 、 right 、 bottom 和 left 属性的简写。它实现与 margin 相同的多值语法。
+
+```css
+div {
+  position: absolute;
+  inset: auto 20px 20px auto;
+}
+/* 上面的使用方法等同于下面属性的较短版本 */
+div {
+  position: absolute;
+  top: auto;
+  right: 20px;
+  bottom: 20px;
+  left: auto;
+}
+```
+
+## 引用参考
+
+[100-days-of-more-or-less-modern-css](https://www.matuzo.at/blog/2022/100-days-of-more-or-less-modern-css/)
