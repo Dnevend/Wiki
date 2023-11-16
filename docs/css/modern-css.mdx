@@ -19,7 +19,7 @@ div {
 /* Result: background-color: #000; */
 ```
 
-### min / max 函数
+### min & max 函数
 
 ```css
 div {
@@ -48,6 +48,34 @@ div {
   right: 20px;
   bottom: 20px;
   left: auto;
+}
+```
+
+### [CSS 逻辑属性与逻辑值](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_logical_properties_and_values/Basic_concepts_of_logical_properties_and_values)
+
+逻辑属性值尊重阅读方向, 会跟随块&行的流向应用属性值.
+
+例如属性: block-size、inline-size、margin-block、margin-inline [...](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_logical_properties_and_values#%E5%8F%82%E8%80%83)
+
+TODO: Demo
+
+### [:where](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:where) & :is 伪类选择器
+
+:where() 和 :is() 的不同之处在于，:where() 的优先级总是为 0，但是 :is() 的优先级是由它的选择器列表中优先级最高的选择器决定的。简言之他们应用的权重不一样。
+
+```css
+/* 选择标题、主要内容中的任何段落或悬停的页脚元素 */
+:where(header, main, footer) p:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* 上面代码等同于下面代码的缩写 */
+header p:hover,
+main p:hover,
+footer p:hover {
+  color: red;
+  cursor: pointer;
 }
 ```
 
