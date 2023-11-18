@@ -1,6 +1,6 @@
 {
-    "label": "Wiki - Webpack",
-    "position": 5,
+    "label": "Wiki - 前端工程化",
+    "position": 12,
     "link": {
         "type": "generated-index",
         "description": "5 minutes to learn the most important Docusaurus concepts."

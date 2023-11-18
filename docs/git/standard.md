@@ -1,9 +1,9 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 tags: [git, standard]
 ---
 
-# Commit Message
+# 提交规范
 
 ## 说明
 
