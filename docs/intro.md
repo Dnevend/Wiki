@@ -2,46 +2,10 @@
 sidebar_position: 1
 ---
 
-# Wiki Intro
+# Wiki 介绍
 
-Let's discover **Docusaurus in less than 5 minutes**.
+- 整理日常的学习碎片, 将阅读过的文章, 分散的内容, 整理成系统的知识.
 
-## Getting Started
+- 养成书写和输出的习惯, 通过输出倒逼输入, 回顾知识体系, 对既有知识进行一次审视, 补充忽略的细节.
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- 专注领域, 保持日常的学习, 每天进步一点点.
