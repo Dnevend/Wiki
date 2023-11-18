@@ -79,6 +79,32 @@ footer p:hover {
 }
 ```
 
+### :placeholder-shown 伪类选择器
+
+:placeholder-shown 伪类选择器可以选择带有未填写的 Input 字段.
+
+### scrollbar-gutter
+
+在默认情况下, 如果元素在盒子内没有溢出, 则不会显示滚动条.
+
+通过设置 scrollbar-gutter 属性为 stable, 可以始终显示滚动条的 gutter, 用以保持布局的稳定.
+
+### dialog & :modal & ::backdrop
+
+HTML 的 `<dialog>` 是原生的对话框元素.
+
+可以使用 show() 和 showModal() 方法来打开 `<dialog>` 元素:
+
+使用 `show()` 方法打开的 **对话框** 会显示在其他元素内容的上方, 用户仍然可以和下方元素进行交互.
+
+使用`showModal()`打开的 **模式对话框**, 他的 backdrop 会覆盖其他元素, 无法与下方内容进行交互.
+
+`:modal` 伪类选择器可以设置模式对话框方法打开的模式对话框的样式.
+
+`::backdrop` 伪元素可以设置模式对话框或使用 [FullScreen API](https://developer.mozilla.org/zh-CN/docs/Web/API/Fullscreen_API) 置于全屏样式的元素的背景样式.
+
+[Dialog Demo](https://codepen.io/Dnevend/pen/VwgyVNm)
+
 ## 引用参考
 
 [100-days-of-more-or-less-modern-css](https://www.matuzo.at/blog/2022/100-days-of-more-or-less-modern-css/)
