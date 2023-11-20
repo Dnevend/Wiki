@@ -25,6 +25,7 @@ div {
 div {
   width: min(100%, 800px);
 }
+
 /* 上面的使用方法等同于下面属性的较短版本 */
 div {
   width: 100%;
@@ -41,6 +42,7 @@ div {
   position: absolute;
   inset: auto 20px 20px auto;
 }
+
 /* 上面的使用方法等同于下面属性的较短版本 */
 div {
   position: absolute;
@@ -70,7 +72,7 @@ TODO: Demo
   cursor: pointer;
 }
 
-/* 上面代码等同于下面代码的缩写 */
+/* 上面的使用方法等同于下面属性的较短版本 */
 header p:hover,
 main p:hover,
 footer p:hover {
@@ -104,6 +106,35 @@ HTML 的 `<dialog>` 是原生的对话框元素.
 `::backdrop` 伪元素可以设置模式对话框或使用 [FullScreen API](https://developer.mozilla.org/zh-CN/docs/Web/API/Fullscreen_API) 置于全屏样式的元素的背景样式.
 
 [Dialog Demo](https://codepen.io/Dnevend/pen/VwgyVNm)
+
+### backdrop-filter
+
+```css
+backdrop-filter: blur | invert | grayscale |...;
+```
+
+backdrop-filter 属性可以将 CSS 过滤器(模糊、颜色反转、灰度等)应用到元素后面的区域.
+
+他与 filter 属性的区别在于, backdrop-filter 不会影响到前景的文本内容.
+
+[Demo](https://codepen.io/Dnevend/pen/xxMYMpY)
+
+### clamp 函数
+
+clamp() 函数定义最小值、首选值和最大值.
+
+```css
+div {
+  width: clamp(300px, 90%, 700px);
+}
+
+/* 上面的使用方法等同于下面属性的较短版本 */
+div {
+  width: 90%;
+  min-width: 300px;
+  max-width: 700px;
+}
+```
 
 ## 引用参考
 
