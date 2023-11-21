@@ -136,6 +136,30 @@ div {
 }
 ```
 
+### vh & svh & lvh & dvh
+
+100vh 在移动设备上的问题在于它不考虑用户界面元素是否展开。它通常总是匹配大视口。
+取决于用户是否与页面交互以及如何交互，他们有时会看到大视口，有时会看到小视口。将高度设置为任一单位可能不是您想要的，因为高度会动态变化。
+使用 dvh 可以动态匹配 svh 或 lvh。
+
+![vh-unit](./vh-unit.jpg)
+
+### aspect-ratio 属性
+
+可以使用 aspect-ratio 属性通过定义首选宽度和高度来定义框的首选纵横比。
+
+如果将 width 和 height 的值设置为 auto 以外的值，则 aspect-ratio 无效。
+
+```css
+div {
+  /* aspect-ratio: width / height */
+  aspect-ratio: 16 / 9;
+  max-width: 400px;
+}
+```
+
 ## 引用参考
+
+[Can I use](https://caniuse.com/)
 
 [100-days-of-more-or-less-modern-css](https://www.matuzo.at/blog/2022/100-days-of-more-or-less-modern-css/)
