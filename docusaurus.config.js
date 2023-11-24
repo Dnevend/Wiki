@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://dnevend.site',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -82,7 +82,7 @@ const config = {
           { to: '/blog', label: 'Blog', position: 'left' },
           { to: '/about', label: 'About', position: 'left' },
           {
-            href: 'https://github.com/Dnevend',
+            href: 'https://github.com/Dnevend/dnevend.github.io',
             label: 'GitHub',
             position: 'right',
           },
