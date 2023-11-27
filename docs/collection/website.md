@@ -21,6 +21,16 @@ tags: [collection website]
 
 ## 设计
 
+[界面灵感](https://uxchi.notion.site/881b4c0179a74935a3f607ad3521cdb5) Web/App/Email/Others 灵感类网站合集.
+
+[Sass Pages](https://saaspages.xyz/) 专注登陆页网站的集合.
+
+[sasspo](https://www.saaspo.com/) SaaS 网站设计灵感集合.
+
+[Godly](https://godly.website/) 来自互联网各地的天文数字般的网页设计灵感.
+
+[Landing Love](https://www.landing.love/) 网站视觉动效.
+
 [Footer](https://www.footer.design/) “The only footer gallery on earth.” 网站页脚(底导)设计.
 
 ## 工具
@@ -30,6 +40,8 @@ tags: [collection website]
 [UI Verse](https://uiverse.io/) UI 组件库，全部由 HTML & CSS 制作.
 
 [Good Palette](https://goodpalette.io/) UI 配色生成工具.
+
+[Hover.css](https://ianlunn.github.io/Hover/#effects) CSS `:hover` 动画效果集合.
 
 [Animotion](https://animotion.dev/) CSS 动画低代码工具.
 
