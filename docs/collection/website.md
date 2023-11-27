@@ -33,6 +33,8 @@ tags: [collection website]
 
 [Footer](https://www.footer.design/) “The only footer gallery on earth.” 网站页脚(底导)设计.
 
+[AntDesign 设计模式](https://www.yuque.com/ant-design/design-pattern/intro)
+
 ## 工具
 
 [Svg Wave](https://svgwave.in/) 一款制作波浪图片或 SVG 动画的工具.
