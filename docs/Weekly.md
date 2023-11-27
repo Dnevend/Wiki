@@ -22,6 +22,7 @@ sidebar_position: 2
 
 - JavaScript Edge/Serverless Runtimes
 - Libraries(Ramda, Zod, Partytown, Mitosis, Yup)
+- Graphics & Animations(Popmotion, Lottie, GreenSock, Theatre, Framer Motion)
 - Architecture and rendering patterns (Islands Architecture)
 
 记录每周读到的新鲜内容和优质文章.
