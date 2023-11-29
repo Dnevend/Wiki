@@ -31,7 +31,11 @@ tags: [collection website]
 
 [Landing Love](https://www.landing.love/) 网站视觉动效.
 
+[Haikei](https://app.haikei.app/) SVG 设计资源生成.
+
 [Footer](https://www.footer.design/) “The only footer gallery on earth.” 网站页脚(底导)设计.
+
+[Google Fonts](https://fonts.google.com/) 谷歌字体库.
 
 [AntDesign 设计模式](https://www.yuque.com/ant-design/design-pattern/intro)
 
