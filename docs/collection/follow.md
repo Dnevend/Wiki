@@ -1,6 +1,8 @@
 ---
-sidebar_position: 4
-tags: [collection follow]
+sidebar_position: 2
+tags: [collection subscribe]
 ---
 
-# 关注
+# 订阅
+
+分享订阅关注内容, 精神食粮来源.
