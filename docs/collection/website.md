@@ -7,7 +7,7 @@ tags: [collection website]
 
 保存使用过的网站, 和实用工具.
 
-## 开发
+## 🧑‍💻 开发
 
 [DevTooly](https://devtooly.com/) All-in-one 前端开发工具导航. 聚合了前端开发有关的(CSS 动画、组件、样式、设计...)资源.
 
@@ -21,7 +21,7 @@ tags: [collection website]
 
 [Dev Urls](https://devurls.com/) 开发相关网站的聚合导航站点, 聚合了各主流开发社区的最近热门内容.
 
-## 设计
+## 🎨 设计
 
 [界面灵感](https://uxchi.notion.site/881b4c0179a74935a3f607ad3521cdb5) Web/App/Email/Others 灵感类网站合集.
 
@@ -41,7 +41,7 @@ tags: [collection website]
 
 [AntDesign 设计模式](https://www.yuque.com/ant-design/design-pattern/intro)
 
-## 工具
+## 🛠️ 工具
 
 [Svg Wave](https://svgwave.in/) 一款制作波浪图片或 SVG 动画的工具.
 
@@ -65,11 +65,13 @@ tags: [collection website]
 
 [Griddy](https://griddy.io/) 一款可以在线生成简单的 css grid 布局样式代码的 GUI 工具.
 
-## 运动&健康
+[miniPaint](https://github.com/viliusle/miniPaint) 在线图像编辑器, Photoshop 替代品, 关键实现：图层、滤镜、HTML5、开源。
+
+## 🫀 运动&健康
 
 [MuscleWiki](https://musclewiki.com/) 根据视图上选择的肌肉给出训练动作.
 
-## 博客
+## 📜 博客
 
 [BlogHub](https://bloghub.fun/) 优秀博客收录站点.
 
@@ -77,6 +79,6 @@ tags: [collection website]
 
 [积薪](https://firewood.news/) 中文独立博客导航.
 
-## 其他
+## 👣 其他
 
 [反向词典](https://wantwords.net/) 可以通过描述意思来查找词语.
