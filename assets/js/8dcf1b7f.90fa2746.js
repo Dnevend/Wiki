@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[4222],{2792:i=>{i.exports=JSON.parse('{"label":"btc","permalink":"/docs/tags/btc","allTagsPath":"/docs/tags","count":1,"items":[{"id":"blockchain/intro","title":"intro","description":"bitcoin-paper","permalink":"/docs/blockchain/intro"}]}')}}]);
