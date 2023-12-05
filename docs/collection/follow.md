@@ -29,6 +29,28 @@ tags: [collection subscribe]
 
 ## 博客
 
+- [张路遥](https://zhangluyao.com/)
+
+- [Bobi.ink](https://bobi.ink/)
+
+- [Cali](https://cali.so/)
+
+- [代码家](https://daimajia.com/)
+
+- [杨钦元](http://yangqinyuan.com/)
+
+- [扯氮集](http://weiwuhui.com/)
+
+- [Meditic](https://meditic.com/)
+
+- [胡涂说](https://hutusi.com/)
+
+- [manateelazycat](https://manateelazycat.github.io/index.html)
+
 ## 播客
 
 ## 论坛
+
+- [V2EX](https://v2ex.com/)
+
+- [海德沙龙](https://headsalon.org/)

@@ -79,6 +79,10 @@ tags: [collection website]
 
 [积薪](https://firewood.news/) 中文独立博客导航.
 
+## 📰 实事信息
+
+[Buzzing](https://www.buzzing.cc/) 用中文浏览国外社交媒体里的热门讨论。
+
 ## 👣 其他
 
 [反向词典](https://wantwords.net/) 可以通过描述意思来查找词语.
