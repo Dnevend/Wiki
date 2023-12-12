@@ -35,3 +35,7 @@ sidebar_position: 2
 - [业余作者如何摸索出路 - 多抓鱼](https://www.duozhuayu.com/posts/1012)
 
   「吟安一个字，捻断数茎须」的修辞传统之下，许多许多的传世作品，实际上都是一种文玩产物，审美也许是好的，却只有一个盆景那么大的格局。人们太喜欢口吐莲花和字字珠玑，最后忘了真正要说什么。
+
+## 2023-12-12
+
+- [对抗软件复杂度的战争](https://mp.weixin.qq.com/s/f82GBadLcQJCiFHcGWzkCA)
