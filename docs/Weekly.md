@@ -39,3 +39,5 @@ sidebar_position: 2
 ## 2023-12-12
 
 - [对抗软件复杂度的战争](https://mp.weixin.qq.com/s/f82GBadLcQJCiFHcGWzkCA)
+
+- [微前端时代：打造高效、灵活的前端开发体系](https://mp.weixin.qq.com/s/48Jy1CXQNzRLUAYDzA0Xbg)
