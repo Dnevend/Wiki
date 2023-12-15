@@ -41,3 +41,14 @@ sidebar_position: 2
 - [对抗软件复杂度的战争](https://mp.weixin.qq.com/s/f82GBadLcQJCiFHcGWzkCA)
 
 - [微前端时代：打造高效、灵活的前端开发体系](https://mp.weixin.qq.com/s/48Jy1CXQNzRLUAYDzA0Xbg)
+
+- [CSS Wrapped: 2023!](https://developer.chrome.com/blog/css-wrapped-2023?hl=zh-cn#live-demo-scroll-timeline)
+
+  Chrome 2023 年度的 CSS 总结：
+
+  - 架构基础：三角函数、复杂的第 n-\*选择、@scoped、选择器嵌套、子网格
+  - 排版：首字母、文本换行/美观
+  - 颜色： 颜色级别、Color-mix 函数、相对颜色语法
+  - 自适应设计：容器查询、样式查询、:has 选择器
+  - 交互：试图转换、滚动结束、滚动条驱动动画
+  - 组件：弹出式窗口 Popover、Select 中的`<hr />`分割元素、:user-valid/invalid 伪类
