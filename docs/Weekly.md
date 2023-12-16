@@ -44,8 +44,6 @@ sidebar_position: 2
 
 - [CSS Wrapped: 2023!](https://developer.chrome.com/blog/css-wrapped-2023?hl=zh-cn#live-demo-scroll-timeline)
 
-  Chrome 2023 年度的 CSS 总结：
-
   - 架构基础：三角函数、复杂的第 n-\*选择、@scoped、选择器嵌套、子网格
   - 排版：首字母、文本换行/美观
   - 颜色： 颜色级别、Color-mix 函数、相对颜色语法

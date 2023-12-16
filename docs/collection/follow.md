@@ -47,6 +47,8 @@ tags: [collection subscribe]
 
 - [manateelazycat](https://manateelazycat.github.io/index.html)
 
+- [春水煎茶](https://writings.sh/about)
+
 ## 播客
 
 ## 论坛
