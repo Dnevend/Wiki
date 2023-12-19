@@ -41,6 +41,8 @@ tags: [collection website]
 
 [AntDesign 设计模式](https://www.yuque.com/ant-design/design-pattern/intro)
 
+[Framer Motion examples](https://framermotionexamples.com/) framer motion example projects.
+
 ## 🛠️ 工具
 
 [Svg Wave](https://svgwave.in/) 一款制作波浪图片或 SVG 动画的工具.
