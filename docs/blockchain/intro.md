@@ -19,6 +19,30 @@ tags: [blockchain, btc]
 
 梳理一下，整个流程是这样的：小明首先要凑够足够面额的 Input，这里他找到了两个 Input，而这两个 Input 本身都是以往交易的 Output。这两个 Output 在未消费之前，就是 UTXO，但是当前交易一旦生效，它们两个就会被消耗掉，而本交易中又会生成两个新的 UTXO，一个指向小明，一个指向小刚。相当于小明和小刚各种领到手一个硬币，未来可以在其他交易中去消费。而小明和小刚各自地址的余额，其实就是各自对应的所有 UTXO 的总和。
 
+### [Dust Error](https://help.crypto.com/en/articles/4056357-what-is-dust-utxo-error)
+
+    灰尘是指少量的小数代币，通常低于网络/交易费用。当用户来回发送比特币时，比特币协议有时会产生少量的硬币输出。从比特币分叉出来的其他 UTXO（未使用交易输出）区块链也会产生同样的微小输出，例如莱特币（LTC）、狗狗币（DOGE）、比特币现金（BCH）。
+
+灰尘有 3 个负面影响：
+
+- 用户花费需要较大网络费用来确认交易的资金是无利可图的
+
+- 它通过不经济的交易使网络超载而污染生态系统（在数据存储和时间方面，小额交易需要与大额交易类似的数据空间存储）
+
+- 当您将不同钱包中的灰尘合并到一个钱包中时，它会降低您的隐私级别，这会暴露您的钱包身份，其他人可以猜测这些钱包都属于一个人
+
+我怎样才能解决这个灰尘 UTXO 错误？
+
+- 请勿发送费用较高的小额交易。由于网络将尝试从小交易创建 UTXO，因此交易将会失败。
+
+- 尝试先向钱包添加更多资金，然后再将其全部发送出去。拥有更大的交易将确保网络立即接受交易。
+
+- 在发送确认屏幕中选择较低的费用等级
+
+- 确保在钱包上留下大量剩余余额，以便当您尝试花费剩余余额时网络不会将其视为灰尘交易
+
+### [BAD-TXNS-MISSINGORSPENT Error](https://medium.com/@JordanCamirand/solving-bad-txns-missingorspent-error-ledger-live-cda954a00255)
+
 [bitcoin-paper](https://bitcoin.org/files/bitcoin-paper/bitcoin_zh_cn.pdf)
 
 [bitcoin-whitepaper-chinese-translation](https://github.com/xiaolai/bitcoin-whitepaper-chinese-translation)
