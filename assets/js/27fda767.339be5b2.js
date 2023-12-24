@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[6676],{2843:s=>{s.exports=JSON.parse('{"label":"js-guide","permalink":"/docs/tags/js-guide","allTagsPath":"/docs/tags","count":1,"items":[{"id":"fe-basic/js-guide","title":"JS \u4e66\u5199\u89c4\u8303","description":"\u5f15\u7528\u53c2\u8003","permalink":"/docs/fe-basic/js-guide"}]}')}}]);
