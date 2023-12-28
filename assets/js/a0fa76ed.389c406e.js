@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[8862],{1188:s=>{s.exports=JSON.parse('{"label":"typescript","permalink":"/docs/tags/typescript","allTagsPath":"/docs/tags","count":1,"items":[{"id":"fe-basic/ts","title":"TypeScript","description":"","permalink":"/docs/fe-basic/ts"}]}')}}]);
