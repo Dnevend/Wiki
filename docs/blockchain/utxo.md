@@ -3,7 +3,9 @@ sidebar_position: 1
 tags: [blockchain, btc]
 ---
 
-## [UTXO 是什么？](https://nervosbook.github.io/book/zh/utxo.html) Unspent transaction output
+# UTXO
+
+## [UTXO(Unspent transaction output)](https://nervosbook.github.io/book/zh/utxo.html)
 
 比特币的区块链由一个个区块串联构成，而每个区块又包含一个或多个交易。
 
@@ -19,9 +21,11 @@ tags: [blockchain, btc]
 
 梳理一下，整个流程是这样的：小明首先要凑够足够面额的 Input，这里他找到了两个 Input，而这两个 Input 本身都是以往交易的 Output。这两个 Output 在未消费之前，就是 UTXO，但是当前交易一旦生效，它们两个就会被消耗掉，而本交易中又会生成两个新的 UTXO，一个指向小明，一个指向小刚。相当于小明和小刚各种领到手一个硬币，未来可以在其他交易中去消费。而小明和小刚各自地址的余额，其实就是各自对应的所有 UTXO 的总和。
 
+## 异常
+
 ### [Dust Error](https://help.crypto.com/en/articles/4056357-what-is-dust-utxo-error)
 
-    灰尘是指少量的小数代币，通常低于网络/交易费用。当用户来回发送比特币时，比特币协议有时会产生少量的硬币输出。从比特币分叉出来的其他 UTXO（未使用交易输出）区块链也会产生同样的微小输出，例如莱特币（LTC）、狗狗币（DOGE）、比特币现金（BCH）。
+灰尘是指少量的小数代币，通常低于网络/交易费用。当用户来回发送比特币时，比特币协议有时会产生少量的硬币输出。从比特币分叉出来的其他 UTXO（未使用交易输出）区块链也会产生同样的微小输出，例如莱特币（LTC）、狗狗币（DOGE）、比特币现金（BCH）。
 
 灰尘有 3 个负面影响：
 
@@ -42,7 +46,3 @@ tags: [blockchain, btc]
 - 确保在钱包上留下大量剩余余额，以便当您尝试花费剩余余额时网络不会将其视为灰尘交易
 
 ### [BAD-TXNS-MISSINGORSPENT Error](https://medium.com/@JordanCamirand/solving-bad-txns-missingorspent-error-ledger-live-cda954a00255)
-
-[bitcoin-paper](https://bitcoin.org/files/bitcoin-paper/bitcoin_zh_cn.pdf)
-
-[bitcoin-whitepaper-chinese-translation](https://github.com/xiaolai/bitcoin-whitepaper-chinese-translation)
