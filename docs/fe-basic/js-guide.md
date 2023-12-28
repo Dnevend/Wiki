@@ -8,3 +8,5 @@ tags: [fe-basic, js-guide]
 ## 引用参考
 
 - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+
+- [JavaScript Standard Style](https://standardjs.com/readme-zhcn)
