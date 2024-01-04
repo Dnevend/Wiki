@@ -49,6 +49,8 @@ tags: [collection subscribe]
 
 - [春水煎茶](https://writings.sh/about)
 
+- [Randy Lu](https://lutaonan.com/)
+
 ## 播客
 
 ## 论坛
