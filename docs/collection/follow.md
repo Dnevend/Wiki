@@ -51,6 +51,8 @@ tags: [collection subscribe]
 
 - [Randy Lu](https://lutaonan.com/)
 
+- [硅谷王川](https://chuan.us/)
+
 ## 播客
 
 ## 论坛
