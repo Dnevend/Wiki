@@ -69,6 +69,8 @@ tags: [collection website]
 
 [miniPaint](https://github.com/viliusle/miniPaint) 在线图像编辑器, Photoshop 替代品, 关键实现：图层、滤镜、HTML5、开源。
 
+[excalidraw](https://github.com/excalidraw/excalidraw) 手绘风格的在线画板。
+
 ## 🫀 运动&健康
 
 [MuscleWiki](https://musclewiki.com/) 根据视图上选择的肌肉给出训练动作.
@@ -88,3 +90,9 @@ tags: [collection website]
 ## 👣 其他
 
 [反向词典](https://wantwords.net/) 可以通过描述意思来查找词语.
+
+[得道品控手册](https://dedao.feishu.cn/wiki/wikcnfT2WH5LXwFQvjgpmISVTzH)
+
+[松节油-少楠](https://www.notion.so/c5151b9788264405a6b8f2401525dd85?v=fff2bf30d8914419823e67df3e0feb48)
+
+[Ness Labs](https://nesslabs.com/best) Best mindful productivity and creativity articles.
