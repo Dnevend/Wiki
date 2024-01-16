@@ -1,11 +1,9 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 tags: [command, linux]
 ---
 
-# Command
-
-## 系统管理
+# 系统管理
 
 - 系统安全
   - `sudo` 以其他身份（超级用户）来执行命令
