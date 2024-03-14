@@ -14,3 +14,9 @@ tags: [blockchain, btc]
 [mipd - Github](https://github.com/wevm/mipd)
 
 [Metamask 实现 - Github](https://github.com/MetaMask/providers/blob/v14.0.2/src/EIP6963.ts)
+
+## EIP-1193
+
+EIP-1193 旨在为以太坊钱包和 DApps 之间的通信提供一致的接口。这个提案定义了一种 JavaScript API，通过这个 API，DApps 可以请求用户的账户信息、订阅钱包的事件，以及向以太坊网络发送交易。EIP-1193 的目标是提高开发者在不同钱包提供者之间构建应用的兼容性和用户体验。
+
+[Ethereum Provider](https://juejin.cn/post/7176218426061357115)
