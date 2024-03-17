@@ -21,6 +21,8 @@ tags: [collection website]
 
 [Dev Urls](https://devurls.com/) 开发相关网站的聚合导航站点, 聚合了各主流开发社区的最近热门内容.
 
+[Aceternity UI](https://ui.aceternity.com/) 流行设计组件实现
+
 ## 🎨 设计
 
 [界面灵感](https://uxchi.notion.site/881b4c0179a74935a3f607ad3521cdb5) Web/App/Email/Others 灵感类网站合集.
