@@ -46,9 +46,43 @@ tags: [blockchain, btc]
 一份拥有 800 个地址的白名单，更新一次所需的 gas fee 很容易超过 1 个 ETH。而由于 Merkle Tree 验证时，
 Leaf 和 proof 可以存在后端，链上仅需存储一个 root 的值，非常节省 gas，项目方经常用它来发放白名单。
 
+## Demo
+
+```javascript title="Demo.js"
+// 构造树、生成证明并验证证明
+
+const { MerkleTree } = require("merkletreejs");
+const SHA256 = require("crypto-js/sha256");
+
+const leaves = ["a", "b", "c"].map((x) => SHA256(x));
+const tree = new MerkleTree(leaves, SHA256);
+const root = tree.getRoot().toString("hex");
+const leaf = SHA256("a");
+const proof = tree.getProof(leaf);
+console.log(tree.verify(proof, leaf, root)); // true
+
+const badLeaves = ["a", "x", "c"].map((x) => SHA256(x));
+const badTree = new MerkleTree(badLeaves, SHA256);
+const badLeaf = SHA256("x");
+const badProof = badTree.getProof(badLeaf);
+console.log(badTree.verify(badProof, badLeaf, root)); // false
+```
+
+```bash title="Print Tree"
+# console.log(tree.toString())
+└─ 7075152d03a5cd92104887b476862778ec0c87be5c2fa1c0a90f87c49fad6eff
+   ├─ e5a01fee14e0ed5c48714f22180f25ad8365b53f9779f79dc4a3d7e93963f94a
+   │  ├─ ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+   │  └─ 3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d
+   └─ 2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6
+      └─ 2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6
+```
+
 ## 引用参考
 
 [MerkleTree.js](https://github.com/merkletreejs/merkletreejs)
+
+[Example](https://lab.miguelmota.com/merkletreejs/example/)
 
 [默克尔树结构](https://yeasy.gitbook.io/blockchain_guide/05_crypto/merkle_trie)
 
