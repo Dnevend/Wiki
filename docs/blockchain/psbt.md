@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-tags: [blockchain, btc]
+tags: [blockchain, psbt]
 ---
 
 # PSBT

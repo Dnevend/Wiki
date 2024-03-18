@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-tags: [blockchain, btc]
+tags: [blockchain, utxo]
 ---
 
 # UTXO

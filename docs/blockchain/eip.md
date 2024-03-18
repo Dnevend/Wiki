@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-tags: [blockchain, btc]
+tags: [blockchain, eip]
 ---
 
 # EIP

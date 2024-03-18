@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-tags: [blockchain, btc]
+tags: [blockchain, hdwallet]
 ---
 
 # HDWallet
