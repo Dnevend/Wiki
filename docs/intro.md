@@ -14,7 +14,7 @@ sidebar_position: 1
 
 - 整理日常的学习碎片, 将阅读过的文章, 分散的内容, 整理成系统的知识.
 
-## [Weekly](/docs/weekly)
+## [Weekly](/docs/category/weekly)
 
 - 记录每周读到的新鲜内容和优秀文章, 使这些内容即使不停留在脑海, 也不至于消逝于时间的长河.
 
