@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[5970],{5683:e=>{e.exports=JSON.parse('{"title":"Wiki - Rest","slug":"/category/wiki---rest","permalink":"/docs/category/wiki---rest","navigation":{"previous":{"title":"Docker","permalink":"/docs/devops/docker"},"next":{"title":"\u6682\u672a\u5206\u7c7b","permalink":"/docs/rest/concept"}}}')}}]);
