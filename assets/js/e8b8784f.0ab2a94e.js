@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[8462],{1895:a=>{a.exports=JSON.parse('{"label":"javascript","permalink":"/docs/tags/javascript","allTagsPath":"/docs/tags","count":1,"items":[{"id":"javascript/intro","title":"intro","description":"","permalink":"/docs/javascript/intro"}]}')}}]);

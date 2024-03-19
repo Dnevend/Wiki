@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[3211],{1664:s=>{s.exports=JSON.parse('{"label":"seo","permalink":"/docs/tags/seo","allTagsPath":"/docs/tags","count":1,"items":[{"id":"fe-basic/intro","title":"\u8bf4\u660e","description":"","permalink":"/docs/fe-basic/intro"}]}')}}]);
