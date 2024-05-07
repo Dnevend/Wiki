@@ -81,6 +81,12 @@ const config = {
             position: 'left',
             label: 'Wiki',
           },
+          {
+            type: 'docSidebar',
+            sidebarId: 'weeklySidebar',
+            position: 'left',
+            label: 'Weekly',
+          },
           { to: '/blog', label: 'Blog', position: 'left' },
           { to: '/about', label: 'About', position: 'left' },
           {
