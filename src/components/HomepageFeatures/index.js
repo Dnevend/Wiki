@@ -9,7 +9,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        沉淀日常的技术和知识. 不免于模仿, 但总是在消化后才成文章.
+        沉淀日常的技术和知识。
       </>
     ),
     linkTo: '/docs/intro'
@@ -19,21 +19,20 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        一些过往的记录和闲言碎语加上一些技术的输出. 往日害怕于思想和文字水平的不成熟, 迟迟不肯动笔,
-        想来, 这是每个阶段真实的自己, 用不着逃避, 些许时日以后, 再回看当时的想法, 或许会有不同的感受.
+        一些过往的记录和闲言碎语加上一些技术的输出。
       </>
     ),
     linkTo: '/blog'
   },
   {
-    title: 'About',
+    title: 'Weekly',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        这里可以认识一个具体的我.
+        每周读到的有意思的文章和内容.
       </>
     ),
-    linkTo: '/about'
+    linkTo: '/docs/weekly/2024'
   },
 ];
 

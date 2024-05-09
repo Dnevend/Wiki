@@ -1,8 +1,10 @@
 {
-    "label": "Wiki - 前端基础修养",
-    "position": 8,
+    "label": "前端基础修养",
+    "position": 3,
+    "collapsible": true,
+    "collapsed": false,
     "link": {
         "type": "generated-index",
-        "description": "5 minutes to learn the most important Docusaurus concepts."
+        "description": "成为专业工程师的基础编程素养。"
     }
 }

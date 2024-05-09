@@ -88,7 +88,6 @@ const config = {
             label: 'Weekly',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
-          { to: '/about', label: 'About', position: 'left' },
           {
             href: 'https://github.com/Dnevend/dnevend.github.io',
             label: 'GitHub',

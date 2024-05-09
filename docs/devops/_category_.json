@@ -1,8 +1,8 @@
 {
-    "label": "Wiki - DevOps",
-    "position": 9,
+    "label": "DevOps",
+    "position": 5,
     "link": {
         "type": "generated-index",
-        "description": "5 minutes to learn the most important Docusaurus concepts."
+        "description": "全干工程师的开发及运维技巧。"
     }
 }

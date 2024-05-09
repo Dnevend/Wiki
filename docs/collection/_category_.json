@@ -1,8 +1,10 @@
 {
     "label": "Collection",
-    "position": 3,
+    "position": 2,
+    "collapsible": true,
+    "collapsed": false,
     "link": {
         "type": "generated-index",
-        "description": "5 minutes to learn the most important Docusaurus concepts."
+        "description": "关注及订阅的内容，收藏的网站，一些实用工具。"
     }
 }

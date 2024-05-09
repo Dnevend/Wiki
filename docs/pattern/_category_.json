@@ -1,8 +1,8 @@
 {
-    "label": "Wiki - 设计模式",
-    "position": 6,
+    "label": "设计模式",
+    "position": 8,
     "link": {
         "type": "generated-index",
-        "description": "5 minutes to learn the most important Docusaurus concepts."
+        "description": "记录和学习使用过的设计模式。"
     }
 }
