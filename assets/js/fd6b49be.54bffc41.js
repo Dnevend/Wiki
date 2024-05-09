@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[8669],{8920:e=>{e.exports=JSON.parse('{"title":"Rest","slug":"/category/rest","permalink":"/docs/category/rest","navigation":{"previous":{"title":"\u4ecb\u7ecd","permalink":"/docs/pattern/intro"},"next":{"title":"\u6682\u672a\u5206\u7c7b","permalink":"/docs/rest/concept"}}}')}}]);
