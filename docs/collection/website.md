@@ -75,6 +75,10 @@ tags: [collection website]
 
 [excalidraw](https://github.com/excalidraw/excalidraw) 手绘风格的在线画板。
 
+## 📈 运营增涨
+
+[1000UserGuide](https://1000userguide.com/#/) 找到你的前 1000 个用户，把你的产品推销出去，让更多人知道
+
 ## 🫀 运动&健康
 
 [MuscleWiki](https://musclewiki.com/) 根据视图上选择的肌肉给出训练动作.
