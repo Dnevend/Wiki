@@ -21,7 +21,10 @@ tags: [collection website]
 
 [Dev Urls](https://devurls.com/) 开发相关网站的聚合导航站点, 聚合了各主流开发社区的最近热门内容.
 
-[Aceternity UI](https://ui.aceternity.com/) 流行设计组件实现
+[Aceternity UI](https://ui.aceternity.com/) 流行设计组件实现。
+
+[Tailwind Components](https://tailwindcomponents.com/) Open source Tailwind UI components and templates to
+bootstrap your new apps, projects or landing sites!
 
 ## 🎨 设计
 
