@@ -26,6 +26,8 @@ tags: [collection website]
 [Tailwind Components](https://tailwindcomponents.com/) Open source Tailwind UI components and templates to
 bootstrap your new apps, projects or landing sites!
 
+[Tailwind Gradient Generator](https://tailwindcomponents.com/gradient-generator/) Tailwind CSS Gradient Generator.
+
 ## 🎨 设计
 
 [界面灵感](https://uxchi.notion.site/881b4c0179a74935a3f607ad3521cdb5) Web/App/Email/Others 灵感类网站合集.
