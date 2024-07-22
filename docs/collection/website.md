@@ -32,6 +32,10 @@ bootstrap your new apps, projects or landing sites!
 
 [useAnimations](https://useanimations.com/) Lottie Framework 中的动画图标可立即实施到您的应用程序或网站。
 
+[Preline UI](https://preline.co/index.html) Tailwind CSS components library。
+
+[](https://bg.ibelick.com/) Tailwind CSS 背景集合。
+
 ## 🎨 设计
 
 [界面灵感](https://uxchi.notion.site/881b4c0179a74935a3f607ad3521cdb5) Web/App/Email/Others 灵感类网站合集.
