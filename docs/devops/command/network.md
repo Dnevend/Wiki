@@ -79,7 +79,7 @@ curl -L ip.tool.lu
 curl -w https://www.mrsingsing.com
 ```
 
-curl 提供了很多置换变量，可以在格式化字符串中通过 %{var} 的形式使用。完整的变量列表可以在 curl 的 manpage 中查看。简单介绍一下我们使用的这几个变量：
+curl 提供了很多置换变量，可以在格式化字符串中通过 %\{var} 的形式使用。完整的变量列表可以在 curl 的 manpage 中查看。简单介绍一下我们使用的这几个变量：
 
 - `url_effective`: 执行完地址重定向之后的最终 URL；
 - `time_namelookup`: 从请求开始至完成名称解析所花的时间，单位为秒，下同；
