@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[2933],{4712:e=>{e.exports=JSON.parse('{"label":"webpack","permalink":"/docs/tags/webpack","allTagsPath":"/docs/tags","count":1,"items":[{"id":"engineering/webpack","title":"Webpack","description":"\u5f15\u7528\u53c2\u8003","permalink":"/docs/engineering/webpack"}]}')}}]);
