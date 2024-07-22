@@ -28,3 +28,17 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.navbar {
+  background: none;
+  backdrop-filter: blur(8px);
+}
+
+.navbar-sidebar,
+.navbar-sidebar__backdrop {
+  height: 100vh;
+}
+
+.navbar__logo>img {
+  border-radius: 6px;
+}

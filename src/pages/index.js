@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import clsx from 'clsx';
 // import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
+import { BlurDotBg } from '../utils/BlurDotBg.module';
 import styles from './index.module.css';
 
 const taglines = [
@@ -16,7 +16,8 @@ function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
+      <div id='color4bg' className={styles.colorBg} />
+      <div className={`container ${styles.container}`}>
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{taglines[Math.floor(Math.random() * taglines.length)]}</p>
         <div className={styles.buttons}>
@@ -33,6 +34,15 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+
+  useEffect(() => {
+    new BlurDotBg({
+      dom: "color4bg",
+      colors: ["#11694E", "#48BF91", "#8FD9A8", "#15997A"],
+      loop: true
+    })
+  }, [])
+
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
