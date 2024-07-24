@@ -5,8 +5,6 @@ tags: [collection website]
 
 # 网站
 
-保存使用过的网站, 和实用工具.
-
 ## 🧑‍💻 开发
 
 [DevTooly](https://devtooly.com/) All-in-one 前端开发工具导航. 聚合了前端开发有关的(CSS 动画、组件、样式、设计...)资源.
@@ -32,7 +30,9 @@ bootstrap your new apps, projects or landing sites!
 
 [useAnimations](https://useanimations.com/) Lottie Framework 中的动画图标可立即实施到您的应用程序或网站。
 
-[Preline UI](https://preline.co/index.html) Tailwind CSS components library。
+[Preline UI](https://preline.co/index.html) Tailwind CSS components library.
+
+[HyperUI](https://www.hyperui.dev/)Free Open Source Tailwind CSS Components.
 
 [Tailwind Background](https://bg.ibelick.com/) Tailwind CSS 背景集合。
 
