@@ -34,7 +34,9 @@ bootstrap your new apps, projects or landing sites!
 
 [Preline UI](https://preline.co/index.html) Tailwind CSS components library。
 
-[](https://bg.ibelick.com/) Tailwind CSS 背景集合。
+[Tailwind Background](https://bg.ibelick.com/) Tailwind CSS 背景集合。
+
+[uiverse](https://uiverse.io/) 适用于任何项目的开源 UI 元素。
 
 ## 🎨 设计
 
