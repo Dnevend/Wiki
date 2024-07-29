@@ -8,7 +8,8 @@ const darkTheme = themes.dracula;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '小学後生',
-  tagline: '“能少做一份懦夫, 就多充一份勇士; 能表白一下真我, 就少带一次假面.”  --李敖',
+  titleDelimiter: '·',
+  tagline: '00后全栈工程师 | 让可能性发生',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -42,20 +43,23 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           blogSidebarTitle: 'All posts',
           blogSidebarCount: 'ALL',
-          // TODO: https://docusaurus.io/zh-CN/docs/blog#feed
+          feedOptions: {
+            type: 'all',
+            title: '小学後生',
+            createFeedItems: async (params) => {
+              const { blogPosts, defaultCreateFeedItems, ...rest } = params;
+              return defaultCreateFeedItems({
+                // keep only the 10 most recent blog posts in the feed
+                blogPosts: blogPosts.filter((item, index) => index < 10),
+                ...rest,
+              });
+            },
+          }
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -72,7 +76,7 @@ const config = {
       navbar: {
         title: 'Dnevend',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Avatar',
           src: 'https://github.com/Dnevend.png',
         },
         items: [
@@ -84,53 +88,39 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'weeklySidebar',
+            sidebarId: 'markSidebar',
             position: 'left',
-            label: 'Weekly',
+            label: 'Mark',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
-          {
-            href: 'https://github.com/Dnevend/dnevend.github.io',
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
-            title: 'Docs',
+            title: 'SiteMap',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Intro',
                 to: '/docs/intro',
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              // {
-              //   label: 'Stack Overflow',
-              //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              // },
-              // {
-              //   label: 'Discord',
-              //   href: 'https://discordapp.com/invite/docusaurus',
-              // },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/Dnevend_09',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
               {
                 label: 'Blog',
                 to: '/blog',
+              },
+            ],
+          },
+          {
+            title: 'Links',
+            items: [
+              {
+                label: '即刻',
+                href: 'https://okjk.co/YFO95r'
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/Dnevend_09',
               },
               {
                 label: 'GitHub',
@@ -139,7 +129,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Website, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightTheme,

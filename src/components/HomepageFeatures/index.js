@@ -7,31 +7,19 @@ const FeatureList = [
   {
     title: 'Wiki',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        沉淀日常的技术和知识。
-      </>
-    ),
+    description: <></>,
     linkTo: '/docs/intro'
   },
   {
     title: 'Blog',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        一些过往的记录和闲言碎语加上一些技术的输出。
-      </>
-    ),
+    description: <></>,
     linkTo: '/blog'
   },
   {
-    title: 'Weekly',
+    title: 'Mark',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        每周读到的有意思的文章和内容.
-      </>
-    ),
+    description: <></>,
     linkTo: '/docs/weekly/2024'
   },
 ];
