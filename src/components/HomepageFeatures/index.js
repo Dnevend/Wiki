@@ -20,7 +20,7 @@ const FeatureList = [
     title: 'Mark',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: <></>,
-    linkTo: '/docs/weekly/2024'
+    linkTo: '/mark/2024'
   },
 ];
 

@@ -68,6 +68,18 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'mark',
+        path: 'mark',
+        routeBasePath: 'mark',
+        sidebarPath: require.resolve('./sidebars.mark.js'),
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -89,8 +101,9 @@ const config = {
           {
             type: 'docSidebar',
             sidebarId: 'markSidebar',
-            position: 'left',
             label: 'Mark',
+            position: 'left',
+            docsPluginId: 'mark'
           },
           { to: '/blog', label: 'Blog', position: 'left' },
         ],
@@ -104,6 +117,10 @@ const config = {
               {
                 label: 'Intro',
                 to: '/docs/intro',
+              },
+              {
+                label: 'Mark',
+                to: '/mark/2024',
               },
               {
                 label: 'Blog',
