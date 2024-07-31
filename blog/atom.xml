@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dnevend.site/blog</id>
     <title>小学後生</title>
-    <updated>2024-07-29T06:57:33.000Z</updated>
+    <updated>2024-07-31T13:07:20.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dnevend.site/blog"/>
     <subtitle>小学後生 Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[移动端调试]]></title>
         <id>https://dnevend.site/blog/debug-mobile-web</id>
         <link href="https://dnevend.site/blog/debug-mobile-web"/>
-        <updated>2024-07-29T06:57:33.000Z</updated>
+        <updated>2024-07-31T13:07:20.000Z</updated>
         <summary type="html"><![CDATA[使用 `chrome://inspect` 和 `whistle` 进行移动端调试]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="介绍">介绍<a class="hash-link" aria-label="介绍的直接链接" title="介绍的直接链接" href="https://dnevend.site/blog/debug-mobile-web#%E4%BB%8B%E7%BB%8D">​</a></h2>
 <p>当移动端 web 项目部署在生产环境, 出现 Android/ios 特定设备下的样式兼容问题, 或想要模拟请求与响应数据, 以及查看 Debug 的数据内容时, 该如何进行调试?</p>
