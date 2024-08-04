@@ -1,0 +1,254 @@
+---
+slug: parallax-scrolling-effect
+title: 视差滚动实践
+description: 视差滚动是一种在网页设计和视频游戏中常见的视觉效果技术，它通过在不同速度上移动页面或屏幕上的多层图像，创造出深度感和动感。
+authors: [Dnevend]
+tags: [frontend, css]
+---
+
+export const BackgroundAttachmentDemo = () => (
+  <iframe
+    src="https://codesandbox.io/embed/23v327?view=preview&hidenavigation=1"
+    style={{
+      width: "100%",
+      height: "500px",
+      border: "0",
+      borderRadius: "4px",
+      overflow: "hidden",
+    }}
+    title="scroll-parallax"
+    allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+  ></iframe>
+);
+
+export const Transform3DDemo = () => (
+  <iframe
+    src="https://codesandbox.io/embed/svg6y8?view=preview&hidenavigation=1"
+    style={{
+      width: "100%",
+      height: "500px",
+      border: "0",
+      borderRadius: "4px",
+      overflow: "hidden",
+    }}
+    title="transfrom-3d"
+    allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+  />
+);
+
+export const ReactScrollParallaxDemo = () => (
+  <iframe
+    src="https://codesandbox.io/embed/lr9mxt?view=preview&module=%2Fsrc%2FApp.js&hidenavigation=1"
+    style={{
+      width: "100%",
+      height: "500px",
+      border: "0",
+      borderRadius: "4px",
+      overflow: "hidden",
+    }}
+    title="react-scroll-parallax"
+    allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+  ></iframe>
+);
+
+> 视差滚动是一种在网页设计和视频游戏中常见的视觉效果技术，它通过在不同速度上移动页面或屏幕上的多层图像，创造出深度感和动感。
+> 这种效果通过前景、中景和背景以不同的速度移动来实现，使得近处的对象看起来移动得更快，而远处的对象移动得较慢。
+
+![parallax-scroll](./example.gif)
+
+## 实现方式
+
+### 1、background-attachment
+
+通过配置该 CSS 属性值为`fixed`可以达到背景图像的位置相对于视口固定，其他元素正常滚动的效果。但该方法的视觉表现单一，没有纵深，缺少动感。
+
+<BackgroundAttachmentDemo />
+
+```css
+.parallax-box {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://picsum.photos/800");
+  background-size: cover;
+  // highlight-next-line
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+```
+
+### 2、Transform 3D
+
+在 CSS 中使用 3D 变换效果，通过将元素划分至不同的纵深层级，在滚动时相对视口不同距离的元素，滚动所产生的位移在视觉上就会呈现越近的元素滚动速度越快，相反越远的元素滚动速度就越慢。
+
+为方便理解，你可以想象正开车行驶在公路上，汽车向前移动，你转头看向窗外，近处的树木一闪而过，远方的群山和风景慢慢的渐行渐远，逐渐的在视野中消失，而天边的太阳却只会在很长的一段距离细微的移动。
+
+<Transform3DDemo />
+
+```css
+.parallax {
+  // highlight-next-line
+  perspective: 1px; /* 设置透视效果，为3D变换创造深度感 */
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.parallax__group {
+  // highlight-next-line
+  transform-style: preserve-3d; /* 保留子元素3D变换效果 */
+  position: relative;
+  height: 100vh;
+}
+
+.parallax__layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 背景层样式，设置为最远的层 */
+.parallax__layer--back {
+  transform: translateZ(-2px) scale(3);
+  z-index: 1;
+}
+
+/* 中间层样式，设置为中等距离的层 */
+.parallax__layer--base {
+  transform: translateZ(-1px) scale(2);
+  z-index: 2;
+}
+
+/* 前景层样式，设置为最近的层 */
+.parallax__layer--front {
+  transform: translateZ(0px);
+  z-index: 3;
+}
+```
+
+通过设置 perspective 属性，为整个容器创建一个 3D 空间。
+
+使用 transform-style: preserve-3d 保持子元素的 3D 变换效果。
+
+将内容分为多个层（背景、中间、前景），使用 translateZ() 将它们放置在 3D 空间的不同深度。
+
+对于较远的层（如背景层），使用 scale() 进行放大，以补偿由于距离产生的视觉缩小效果。
+
+当用户滚动页面时，由于各层位于不同的 Z 轴位置，它们会以不同的速度移动，从而产生视差效果。
+
+### 3、ReactScrollParallax
+
+想得到更炫酷的滚动视差效果，纯 CSS 的实现方式就会有些吃力。
+
+如下是在 React 中实现示例，通过监听滚动事件，封装统一的视差组件，来达到多样的动画效果。
+
+<ReactScrollParallaxDemo />
+
+```javascript
+const Parallax = ({ children, effects = [], speed = 1, style = {} }) => {
+  // 状态hooks：用于存储动画效果的当前值
+  const [transform, setTransform] = useState("");
+
+  useEffect(() => {
+    if (!Array.isArray(effects) || effects.length === 0) {
+      console.warn("ParallaxElement: effects should be a non-empty array");
+      return;
+    }
+
+    const handleScroll = () => {
+      // 计算滚动进度
+      const scrollProgress =
+        (window.scrollY /
+          (document.documentElement.scrollHeight - window.innerHeight)) *
+        speed;
+
+      let transformString = "";
+
+      // 处理每个效果
+      effects.forEach((effect) => {
+        const { property, startValue, endValue, unit = "" } = effect;
+        const value =
+          startValue +
+          (endValue - startValue) * Math.min(Math.max(scrollProgress, 0), 1);
+
+        switch (property) {
+          case "translateX":
+          case "translateY":
+            transformString += `${property}(${value}${unit}) `;
+            break;
+          case "scale":
+            transformString += `scale(${value}) `;
+            break;
+          case "rotate":
+            transformString += `rotate(${value}${unit}) `;
+            break;
+          // 更多的动画效果...
+          default:
+            console.warn(`Unsupported effect property: ${property}`);
+        }
+      });
+
+      // 更新状态
+      setTransform(transformString);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    // 初始化位置
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [effects, speed]);
+
+  // 渲染带有计算样式的子元素
+  return <div style={{ ...style, transform }}>{children}</div>;
+};
+```
+
+在此基础上你可以添加`缓动函数`使动画效果更加平滑；以及使用`requestAnimationFrame`获得更高的动画性能。
+
+:::tip requestAnimationFrame 带来的性能提升
+同步浏览器渲染周期：requestAnimationFrame 会在浏览器下一次重绘之前调用指定的回调函数。这确保了动画更新与浏览器的渲染周期同步，从而产生更流畑的动画效果。
+
+提高性能：与使用 setInterval 或 setTimeout 相比，requestAnimationFrame 可以更高效地管理动画。它只在浏览器准备好进行下一次重绘时才会执行，避免了不必要的计算和重绘。
+
+优化电池使用：在不可见的标签页或最小化的窗口中，requestAnimationFrame 会自动暂停，这可以节省 CPU 周期和电池寿命。
+
+适应显示器刷新率：requestAnimationFrame 会自动适应显示器的刷新率。这意味着在 60Hz、120Hz 或其他刷新率的显示器上，动画都能保持流畑。
+
+避免丢帧：由于与浏览器的渲染周期同步，使用 requestAnimationFrame 可以减少丢帧现象，特别是在高负荷情况下。
+
+更精确的时间控制：requestAnimationFrame 提供了一个时间戳参数，允许更精确地控制动画的时间。
+:::
+
+### 4、组件库方案
+
+在当前成熟的前端生态中，想要获得精彩的视差动画效果，你可以通过现有的开源组件库来高效的完成开发。
+
+以下是一些你可以尝试的主流组件库：
+
+- [rellax (Lightweight, vanilla javascript parallax library)](https://github.com/dixonandmoe/rellax)
+
+- [react-scroll-parallax](https://github.com/jscottsmith/react-scroll-parallax)
+
+- [framer-motion](https://www.framer.com/motion/scroll-animations/)
+
+## 引用参考
+
+[mdn - background-attachment](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment)
+
+[mdn - transform-style](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style)
+
+[Pure CSS Parallax Websites](https://keithclark.co.uk/articles/pure-css-parallax-websites/)
+
+[How to create parallax scrolling with CSS](https://blog.logrocket.com/create-parallax-scrolling-css/)
+
+[视差滚动实践](https://shirleyhwj.github.io/blog/2018/07/19/%E8%A7%86%E5%B7%AE%E6%BB%9A%E5%8A%A8%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0/)
