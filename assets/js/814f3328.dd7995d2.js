@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"All posts","items":[{"title":"\u79fb\u52a8\u7aef\u8c03\u8bd5","permalink":"/blog/debug-mobile-web","unlisted":false},{"title":"\u89c6\u5dee\u6eda\u52a8\u5b9e\u8df5","permalink":"/blog/parallax-scrolling-effect","unlisted":false}]}')}}]);
