@@ -53,6 +53,12 @@ tags: [collection subscribe]
 
 - [硅谷王川](https://chuan.us/)
 
+- [Owen](https://www.owenyoung.com/)
+
+- [MoreRSS](https://morerss.com/zh.php)
+
+  发现和翻译 RSS feeds，掌控自己的信息源，打开全球视野。
+
 ## 播客
 
 ## 论坛
