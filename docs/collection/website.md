@@ -112,7 +112,7 @@ bootstrap your new apps, projects or landing sites!
 
 ## 👣 其他
 
-[反向词典](https://wantwords.net/) 可以通过描述意思来查找词语.
+[反向词典](https://wantwords.net/) 可以通过描述意思来查找词语。
 
 [得道品控手册](https://dedao.feishu.cn/wiki/wikcnfT2WH5LXwFQvjgpmISVTzH)
 
@@ -121,3 +121,5 @@ bootstrap your new apps, projects or landing sites!
 [Ness Labs](https://nesslabs.com/best) Best mindful productivity and creativity articles.
 
 [The Museum of RetroTechnology](http://www.douglas-self.com/MUSEUM/museum.htm)
+
+[Pew Research Center](https://www.pewresearch.org/) A nonpartisan fact tank that informs the public about the issues, attitudes and trends shaping the world.
