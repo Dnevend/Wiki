@@ -1,6 +1,6 @@
 ---
-sidebar_position: 2
-tags: [collection subscribe]
+sidebar_position: 4
+tags: [collection, subscribe]
 ---
 
 # 关注
