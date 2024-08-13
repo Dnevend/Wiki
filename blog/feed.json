@@ -10,7 +10,7 @@
             "url": "https://dnevend.site/blog/debug-mobile-web",
             "title": "移动端调试",
             "summary": "使用 `chrome://inspect` 和 `whistle` 进行移动端调试",
-            "date_modified": "2024-08-13T07:12:56.000Z",
+            "date_modified": "2024-08-13T11:36:28.000Z",
             "author": {
                 "name": "小学后生",
                 "url": "https://dnevend.github.io"
@@ -25,7 +25,7 @@
             "url": "https://dnevend.site/blog/parallax-scrolling-effect",
             "title": "视差滚动实践",
             "summary": "视差滚动是一种在网页设计和视频游戏中常见的视觉效果技术，它通过在不同速度上移动页面或屏幕上的多层图像，创造出深度感和动感。",
-            "date_modified": "2024-08-13T07:12:56.000Z",
+            "date_modified": "2024-08-13T11:36:28.000Z",
             "author": {
                 "name": "小学后生",
                 "url": "https://dnevend.github.io"
@@ -41,7 +41,7 @@
             "url": "https://dnevend.site/blog/tg-payment-guide",
             "title": "Telegram 支付机器人开发小记",
             "summary": "基于Grammy框架 Telegram Bot 开发与支付（TON、Star）开发小记",
-            "date_modified": "2024-08-13T07:12:56.000Z",
+            "date_modified": "2024-08-13T11:36:28.000Z",
             "author": {
                 "name": "小学后生",
                 "url": "https://dnevend.github.io"
