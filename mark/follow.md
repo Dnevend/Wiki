@@ -25,6 +25,8 @@ tags: [collection, subscribe]
 
 - [Daily Stoic](https://dailystoic.com/) 斯多葛主义的经验分享。
 
+- [橙皮书](https://orangepaper.substack.com/) Crypto 周报。
+
 ### 开发&技术
 
 ## 博客

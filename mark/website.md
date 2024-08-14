@@ -123,3 +123,5 @@ bootstrap your new apps, projects or landing sites!
 [The Museum of RetroTechnology](http://www.douglas-self.com/MUSEUM/museum.htm)
 
 [Pew Research Center](https://www.pewresearch.org/) A nonpartisan fact tank that informs the public about the issues, attitudes and trends shaping the world.
+
+[Philosophical things for normal people](https://gainedin.site/)
