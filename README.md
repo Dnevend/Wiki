@@ -1,46 +1,15 @@
-# Website
+# Dnevend · 小学後生
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+## Wiki
 
-### Installation
+- 对既有知识进行一次回顾和审视，补充忽略的细节。
 
-```
-$ yarn
-```
+- 整理日常的学习碎片，将阅读过的文章，分散的内容进行分类，整理成系统的知识。
 
-### Local Development
+## Mark
 
-```
-$ yarn start
-```
+> 值得关注的内容应该收藏起来，让这些内容和作者在这个小天地内形成独特的气场。
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Blog
 
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
-
-TODO:
-
-- 统计（不蒜子）
-- 评论
+> 技术文字，三言两语，望有益于人。
