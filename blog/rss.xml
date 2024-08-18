@@ -4,7 +4,7 @@
         <title>小学後生</title>
         <link>https://dnevend.site/blog</link>
         <description>小学後生 Blog</description>
-        <lastBuildDate>Sun, 18 Aug 2024 11:48:49 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 18 Aug 2024 11:58:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[移动端调试]]></title>
             <link>https://dnevend.site/blog/debug-mobile-web</link>
             <guid>https://dnevend.site/blog/debug-mobile-web</guid>
-            <pubDate>Sun, 18 Aug 2024 11:48:49 GMT</pubDate>
+            <pubDate>Sun, 18 Aug 2024 11:58:04 GMT</pubDate>
             <description><![CDATA[使用 `chrome://inspect` 和 `whistle` 进行移动端调试]]></description>
             <content:encoded><![CDATA[<p>当移动端 web 项目部署在生产环境，项目部署在 Android/iOS 或其他移动设备下发生问题, 或想要模拟请求与拦截响应数据时，你会通过什么方式来进行处理与调试？</p>
 <p>当项目是移动端的普通网页时，你可以通过 Chrome 浏览器自带的 <code>chrome://inspect</code> 功能，通过数据线连接真机设备以实现开发调试。</p>
@@ -65,7 +65,7 @@
             <title><![CDATA[视差滚动实践]]></title>
             <link>https://dnevend.site/blog/parallax-scrolling-effect</link>
             <guid>https://dnevend.site/blog/parallax-scrolling-effect</guid>
-            <pubDate>Sun, 18 Aug 2024 11:48:49 GMT</pubDate>
+            <pubDate>Sun, 18 Aug 2024 11:58:04 GMT</pubDate>
             <description><![CDATA[视差滚动是一种在网页设计和视频游戏中常见的视觉效果技术，它通过在不同速度上移动页面或屏幕上的多层图像，创造出深度感和动感。]]></description>
             <content:encoded><![CDATA[<blockquote>
 <p>视差滚动是一种在网页设计和视频游戏中常见的视觉效果技术，它通过在不同速度上移动页面或屏幕上的多层图像，创造出深度感和动感。
@@ -122,7 +122,7 @@
             <title><![CDATA[Telegram 支付机器人开发小记]]></title>
             <link>https://dnevend.site/blog/tg-payment-guide</link>
             <guid>https://dnevend.site/blog/tg-payment-guide</guid>
-            <pubDate>Sun, 18 Aug 2024 11:48:49 GMT</pubDate>
+            <pubDate>Sun, 18 Aug 2024 11:58:04 GMT</pubDate>
             <description><![CDATA[基于Grammy框架的 Telegram Bot 支付机器人（TON、Star）开发小记]]></description>
             <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" src="https://dnevend.site/assets/images/telegram-stars-7e851b386b071cd2fe52ee9ed1398288.jpeg" width="1200" height="722" class="img_ev3q"></p>
 <p>随着 Telegram 迈向区块链&amp;小程序时代，Telegram 内部已经与 TON 钱包做了集成，并为了应对 Apple 和 Google 关于数字产品销售的政策监管需要上线了 Telegram Stars 作为支付方式。依托 Telegram 生态的数亿用户，存在着大量机遇，并为区块链走向 Mass Adoption 铺设了一条新的高速公路。</p>
