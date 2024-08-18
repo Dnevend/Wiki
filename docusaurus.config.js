@@ -143,7 +143,7 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/Dnevend',
               },
-              { label: 'RSS', href: '/blog/rss.xml' }
+              { label: 'RSS', href: 'https://dnevend.site/blog/rss.xml' }
             ],
           },
         ],
