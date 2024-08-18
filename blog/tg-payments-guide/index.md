@@ -16,11 +16,13 @@ tags: [telegram]
 
 [点击此处访问完整 Demo 地址](https://github.com/Dnevend/tg-payment-bot)
 
+### 初始化
+
 在使用测试环境进行机器人开发时，创建 Bot 实例，需要将`environment`指定为`test`，否则将会产生`401 Unauthorized`错误。
 
 另外如果当前的网络环境需要使用科学上网才能访问 Telegram，还需要配置`baseFetchConfig.agent`为你的代理地址。
 
-```bot.js
+```javascript title="Bot Init"
 new Bot(process.env.BOT_TOKEN!, {
     client: {
         baseFetchConfig: {
@@ -35,7 +37,7 @@ new Bot(process.env.BOT_TOKEN!, {
 
 ### Stars 支付流程
 
-```pay-stars.js
+```javascript title="Pay With Stars"
 // highlight-next-line
 // 1. 调用 `sendInvoice` 发送发票，currency 参数指定为`XTR`
 ctx.api.sendInvoice(ctx.chat!.id, 'Title', 'Description', `payload`, 'XTR', [{ label: 'Label', amount: 1 }])
@@ -70,23 +72,28 @@ bot.on(':successful_payment', ctx => {
 
 1. 生成指定钱包的支付链接
 
-```
-export function generatePaymentLink(toWallet: string, amount: number | string | bigint, comment: string, app: 'tonhub' | 'tonkeeper') {
-    if (app === "tonhub") {
-        return `https://tonhub.com/transfer/${toWallet}?amount=${toNano(
-            amount
-        )}&text=${comment}`;
-    }
-
-    return `https://app.tonkeeper.com/transfer/${toWallet}?amount=${toNano(
-        amount
+```javascript
+function generatePaymentLink(
+  toWallet: string,
+  amount: number | string | bigint,
+  comment: string,
+  app: "tonhub" | "tonkeeper"
+) {
+  if (app === "tonhub") {
+    return `https://tonhub.com/transfer/${toWallet}?amount=${toNano(
+      amount
     )}&text=${comment}`;
+  }
+
+  return `https://app.tonkeeper.com/transfer/${toWallet}?amount=${toNano(
+    amount
+  )}&text=${comment}`;
 }
 ```
 
 2. 将生成的链接以菜单形式返回给用户，并提供`check_transaction`事件用于检查交易
 
-```
+```javascript
 const tonhubPaymentLink = generatePaymentLink(process.env.OWNER_WALLET!, amount, comment, 'tonhub')
 const tonkeeperPaymentLink = generatePaymentLink(process.env.OWNER_WALLET!, amount, comment, 'tonkeeper')
 
@@ -105,51 +112,56 @@ await ctx.reply(
 
 3. 监听`check_transaction`事件，校验支付状态，处理支付成功的逻辑
 
-```
-bot.callbackQuery('check_transaction', checkTransaction)
+```javascript
+bot.callbackQuery("check_transaction", checkTransaction);
 
-async function checkTransaction(ctx: BotContext) {
-    await verifyTransactionExistance(process.env.OWNER_WALLET, ctx.session.amount, ctx.session.comment)
+async function checkTransaction(ctx) {
+  await verifyTransactionExistance(
+    process.env.OWNER_WALLET,
+    ctx.session.amount,
+    ctx.session.comment
+  );
 }
 
-async function verifyTransactionExistance(toWallet: Address, value: number, comment: string) {
-    const endpoint =
-        process.env.NETWORK === "mainnet"
-            ? "https://toncenter.com/api/v2/jsonRPC"
-            : "https://testnet.toncenter.com/api/v2/jsonRPC";
+async function verifyTransactionExistance(
+  toWallet: Address,
+  value: number,
+  comment: string
+) {
+  const endpoint =
+    process.env.NETWORK === "mainnet"
+      ? "https://toncenter.com/api/v2/jsonRPC"
+      : "https://testnet.toncenter.com/api/v2/jsonRPC";
 
-    const httpClient = new HttpApi(
-        endpoint,
-        {
-            apiKey: process.env.TONCENTER_TOKEN
-        }
-    );
+  const httpClient = new HttpApi(endpoint, {
+    apiKey: process.env.TONCENTER_TOKEN,
+  });
 
-    const transactions = await httpClient.getTransactions(toWallet, {
-        limit: 100,
-    });
+  const transactions = await httpClient.getTransactions(toWallet, {
+    limit: 100,
+  });
 
-    let incomingTransactions = transactions.filter(
-        (tx) => Object.keys(tx.out_msgs).length === 0
-    );
+  let incomingTransactions = transactions.filter(
+    (tx) => Object.keys(tx.out_msgs).length === 0
+  );
 
-    for (let i = 0; i < incomingTransactions.length; i++) {
-        let tx = incomingTransactions[i];
-        // Skip the transaction if there is no comment in it
-        if (!tx.in_msg?.msg_data) {
-            continue;
-        }
-
-        // Convert transaction value from nano
-        let txValue = fromNano(tx.in_msg.value);
-        // Get transaction comment
-        let txComment = tx.in_msg.message
-        if (txComment === comment && txValue === value.toString()) {
-            return true;
-        }
+  for (let i = 0; i < incomingTransactions.length; i++) {
+    let tx = incomingTransactions[i];
+    // Skip the transaction if there is no comment in it
+    if (!tx.in_msg?.msg_data) {
+      continue;
     }
 
-    return false;
+    // Convert transaction value from nano
+    let txValue = fromNano(tx.in_msg.value);
+    // Get transaction comment
+    let txComment = tx.in_msg.message;
+    if (txComment === comment && txValue === value.toString()) {
+      return true;
+    }
+  }
+
+  return false;
 }
 ```
 
@@ -177,12 +189,20 @@ async function verifyTransactionExistance(toWallet: Address, value: number, comm
 
 - [grammY 框架](https://grammy.dev/zh/guide/)
 
+  grammY 是一个用于创建 Telegram Bot 的框架。它可以从 TypeScript 和 JavaScript 中使用，在 Node.js、 Deno 和浏览器中运行。
+
 - [Bot Payments API for Digital Goods and Services](https://core.telegram.org/bots/payments-stars)
 
-- [官方 Demo 出售饺子的机器人](https://docs.ton.org/mandarin/develop/dapps/tutorials/accept-payments-in-a-telegram-bot-js)
-
-- [Telegram test server 账号注册](https://medium.com/@Asher_Tan/telegram-test-server%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C-24b0d424a2ff)
+  用于数字商品和服务的机器人支付 API
 
 - [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars)
 
-- [Ton Faucet 水龙头](https://faucet.tonfura.com/)
+  如何将 Telegram Stars 支付集成到您的机器人中
+
+- [测试环境账号注册](https://medium.com/@Asher_Tan/telegram-test-server%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C-24b0d424a2ff)
+
+- [TON Faucet 水龙头](https://faucet.tonfura.com/)
+
+- [官方 Demo 出售饺子的机器人](https://docs.ton.org/mandarin/develop/dapps/tutorials/accept-payments-in-a-telegram-bot-js)
+
+- [本文项目 Demo 地址](https://github.com/Dnevend/tg-payment-bot)
