@@ -1,49 +1,168 @@
 ---
 slug: tg-payment-guide
 title: Telegram 支付机器人开发小记
-description: 基于Grammy框架 Telegram Bot 开发与支付（TON、Star）开发小记
+description: 基于Grammy框架的 Telegram Bot 支付机器人（TON、Star）开发小记
 authors: [Dnevend]
 tags: [telegram]
 ---
 
 # Telegram 支付机器人开发小记
 
-随着 Telegram 迈向区块链&小程序时代，TG 内部已经与 TON 钱包做了集成，并为了应用商店监管需要上线了 Telegram Stars 作为支付方式。正为区块链走向 Mass Adoption 铺设了一条新的高速公路。
+![](./telegram-stars.jpeg)
 
-在实践中学习，本文记录了 Telegram 机器人与支付环节的开发过程和一些经验提示。
+随着 Telegram 迈向区块链&小程序时代，Telegram 内部已经与 TON 钱包做了集成，并为了应对 Apple 和 Google 关于数字产品销售的政策监管需要上线了 Telegram Stars 作为支付方式。依托 Telegram 生态的数亿用户，存在着大量机遇，并为区块链走向 Mass Adoption 铺设了一条新的高速公路。
+
+## 支付机器人
 
 [点击此处访问完整 Demo 地址](https://github.com/Dnevend/tg-payment-bot)
 
-## 支付
+在使用测试环境进行机器人开发时，创建 Bot 实例，需要将`environment`指定为`test`，否则将会产生`401 Unauthorized`错误。
 
-### Pay With Telegram Stars
+另外如果当前的网络环境需要使用科学上网才能访问 Telegram，还需要配置`baseFetchConfig.agent`为你的代理地址。
 
-1. 调用 `sendInvoice` 发送发票，currency 参数指定为`XTR`
+```bot.js
+new Bot(process.env.BOT_TOKEN!, {
+    client: {
+        baseFetchConfig: {
+            // highlight-next-line
+            agent: isDevEnv ? new HttpsProxyAgent('http://127.0.0.1:7890') : null
+        },
+        // highlight-next-line
+        environment: isDevEnv ? 'test' : 'prod'
+    }
+})
+```
 
-2. 等待字段 `pre_checkout_query` 的更新
+### Stars 支付流程
 
-3. 通过 `answerPreCheckoutQuery` 批准或取消订单
+```pay-stars.js
+// highlight-next-line
+// 1. 调用 `sendInvoice` 发送发票，currency 参数指定为`XTR`
+ctx.api.sendInvoice(ctx.chat!.id, 'Title', 'Description', `payload`, 'XTR', [{ label: 'Label', amount: 1 }])
 
-4. 等待字段 `successful_payment` 的更新
+// highlight-next-line
+// 2. 检查发票，等待字段 `pre_checkout_query` 的更新
+bot.on('pre_checkout_query', (ctx) => {
 
-5. 存储成功支付的 `telegram_payment_charge_id`（未来可能需要用它来发起退款）
+// highlight-next-line
+// 3. 通过 `answerPreCheckoutQuery` 批准或取消订单
+    ctx.answerPreCheckoutQuery(true)
+    // ctx.answerPreCheckoutQuery(false, {
+    //     error_message: 'An unexpected error occurred. Please try again later.'
+    // })
+})
 
-6. 向用户交付其所购买的商品和服务
+// highlight-next-line
+// 4. 等待字段 `successful_payment` 的更新
+bot.on(':successful_payment', ctx => {
 
-### Pay With TON
+// highlight-next-line
+// 5. 支付成功回调，存储成功支付的 `telegram_payment_charge_id`（未来可能需要用它来发起退款）
+    console.log(ctx.message?.successful_payment.telegram_payment_charge_id)
 
-TODO:
+// highlight-next-line
+// 6. 向用户交付其所购买的商品和服务，业务逻辑...
+    ctx.reply('payment-success').catch(console.error)
+})
+```
 
-## 注意点
+### TON 支付流程
+
+1. 生成指定钱包的支付链接
+
+```
+export function generatePaymentLink(toWallet: string, amount: number | string | bigint, comment: string, app: 'tonhub' | 'tonkeeper') {
+    if (app === "tonhub") {
+        return `https://tonhub.com/transfer/${toWallet}?amount=${toNano(
+            amount
+        )}&text=${comment}`;
+    }
+
+    return `https://app.tonkeeper.com/transfer/${toWallet}?amount=${toNano(
+        amount
+    )}&text=${comment}`;
+}
+```
+
+2. 将生成的链接以菜单形式返回给用户，并提供`check_transaction`事件用于检查交易
+
+```
+const tonhubPaymentLink = generatePaymentLink(process.env.OWNER_WALLET!, amount, comment, 'tonhub')
+const tonkeeperPaymentLink = generatePaymentLink(process.env.OWNER_WALLET!, amount, comment, 'tonkeeper')
+
+const menu = new InlineKeyboard()
+    .url("Click to pay in TonHub", tonhubPaymentLink)
+    .row()
+    .url("Click to pay in TonKeeper", tonkeeperPaymentLink)
+    .row()
+    .text(`I sent ${amount} TON`, "check_transaction");
+
+await ctx.reply(
+    `Tips`,
+    { reply_markup: menu, parse_mode: "HTML" }
+);
+```
+
+3. 监听`check_transaction`事件，校验支付状态，处理支付成功的逻辑
+
+```
+bot.callbackQuery('check_transaction', checkTransaction)
+
+async function checkTransaction(ctx: BotContext) {
+    await verifyTransactionExistance(process.env.OWNER_WALLET, ctx.session.amount, ctx.session.comment)
+}
+
+async function verifyTransactionExistance(toWallet: Address, value: number, comment: string) {
+    const endpoint =
+        process.env.NETWORK === "mainnet"
+            ? "https://toncenter.com/api/v2/jsonRPC"
+            : "https://testnet.toncenter.com/api/v2/jsonRPC";
+
+    const httpClient = new HttpApi(
+        endpoint,
+        {
+            apiKey: process.env.TONCENTER_TOKEN
+        }
+    );
+
+    const transactions = await httpClient.getTransactions(toWallet, {
+        limit: 100,
+    });
+
+    let incomingTransactions = transactions.filter(
+        (tx) => Object.keys(tx.out_msgs).length === 0
+    );
+
+    for (let i = 0; i < incomingTransactions.length; i++) {
+        let tx = incomingTransactions[i];
+        // Skip the transaction if there is no comment in it
+        if (!tx.in_msg?.msg_data) {
+            continue;
+        }
+
+        // Convert transaction value from nano
+        let txValue = fromNano(tx.in_msg.value);
+        // Get transaction comment
+        let txComment = tx.in_msg.message
+        if (txComment === comment && txValue === value.toString()) {
+            return true;
+        }
+    }
+
+    return false;
+}
+```
+
+## 注意事项
 
 - **测试环境账号注册**
 
   在 Telegram 的账号体系中，测试环境与主环境完全隔离，因此在进行测试环境登录时，无法直接使用现有账号进行登录，在扫码时会提示`AUTH_TOKEN_INVALID2`错误，以及无法收到验证码的情况。
   所以你需要先注册一个测试账号，截止 2024 年 8 月，测试账号只能通过 iPhone 端 Telegram 进行。具体操作流程如下：
 
-  > 1、登录 Telegram iPhone  
-  > 2、多次点击右下角`Setting`Tab 进入 Debug 页面  
-  > 3、点击操作列表中的`Accounts`项  
+  > 1、登录 Telegram iPhone
+  > 2、多次点击右下角`Setting`Tab 进入 Debug 页面
+  > 3、点击操作列表中的`Accounts`项
   > 4、点击`Login to another account`选择`Test`环境，完成账号注册
 
   账号注册完成后，就可以按官方流程进入测试环境。在使用测试环境时，您可以采用未加密的 HTTP 链接来测试您的 Web 应用或 Web 登录功能。
@@ -56,16 +175,14 @@ TODO:
 
 ## 引用参考
 
-- [grammY](https://grammy.dev/zh/guide/)
-
-  grammY 是一个用于创建 Telegram Bot 的框架。它可以从 TypeScript 和 JavaScript 中使用，在 Node.js、 Deno 和浏览器中运行。
+- [grammY 框架](https://grammy.dev/zh/guide/)
 
 - [Bot Payments API for Digital Goods and Services](https://core.telegram.org/bots/payments-stars)
 
-- [出售饺子的机器人](https://docs.ton.org/mandarin/develop/dapps/tutorials/accept-payments-in-a-telegram-bot-js)
-
-  官方 Demo，一个简单的 Telegram 机器人，用于接收 TON 支付。
+- [官方 Demo 出售饺子的机器人](https://docs.ton.org/mandarin/develop/dapps/tutorials/accept-payments-in-a-telegram-bot-js)
 
 - [Telegram test server 账号注册](https://medium.com/@Asher_Tan/telegram-test-server%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C-24b0d424a2ff)
 
 - [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars)
+
+- [Ton Faucet 水龙头](https://faucet.tonfura.com/)
