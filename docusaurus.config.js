@@ -90,7 +90,7 @@ const config = {
         title: 'Dnevend',
         logo: {
           alt: 'Avatar',
-          src: 'https://github.com/Dnevend.png',
+          src: 'img/avatar.png',
         },
         items: [
           {
