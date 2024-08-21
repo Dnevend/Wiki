@@ -50,8 +50,6 @@ bootstrap your new apps, projects or landing sites!
 
 [Landing Love](https://www.landing.love/) 网站视觉动效.
 
-[Haikei](https://app.haikei.app/) SVG 设计资源生成.
-
 [Footer](https://www.footer.design/) “The only footer gallery on earth.” 网站页脚(底导)设计.
 
 [Google Fonts](https://fonts.google.com/) 谷歌字体库.
@@ -61,6 +59,16 @@ bootstrap your new apps, projects or landing sites!
 [Framer Motion examples](https://framermotionexamples.com/) framer motion example projects.
 
 [Design Systems](https://www.designsystemhunt.com/) 网站设计收录站点。
+
+开源 SVG 插图
+
+    - [unDraw](https://undraw.co/illustrations)
+    - [manypixels](https://www.manypixels.co/gallery)
+
+SVG 设计资源生成
+
+    - [Haikei](https://app.haikei.app/)
+    - [Blobmaker](https://www.blobmaker.app/)
 
 ## 🛠️ 工具
 
