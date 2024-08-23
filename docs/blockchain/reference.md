@@ -12,3 +12,7 @@ tags: [blockchain, btc]
 [区块链参考资料 - Github](https://github.com/cancerts/study-blockchain-referrence)
 
 [区块链示例](https://andersbrownworth.com/blockchain/)
+
+[ZJUBCA Blockchain Roadmap](https://zjubca.github.io/roadmap/)
+
+[Web3 List](https://airtable.com/appLAfNo04tWs5111/shrRkFiDtROPQRsLz)
