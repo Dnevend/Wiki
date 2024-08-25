@@ -60,6 +60,8 @@ bootstrap your new apps, projects or landing sites!
 
 [Design Systems](https://www.designsystemhunt.com/) 网站设计收录站点。
 
+[Designing for many platforms](https://design.facebook.com/toolsandresources/devices/)
+
 开源 SVG 插图
 
     - [unDraw](https://undraw.co/illustrations)
