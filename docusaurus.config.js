@@ -148,7 +148,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Website, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Dnevend's Website, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightTheme,
