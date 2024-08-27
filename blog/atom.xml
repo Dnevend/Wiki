@@ -87,7 +87,9 @@
             <name>小学后生</name>
             <uri>https://dnevend.github.io</uri>
         </author>
-        <category label="telegram" term="telegram"/>
+        <category label="Telegram BOT" term="Telegram BOT"/>
+        <category label="Telegram Stars" term="Telegram Stars"/>
+        <category label="TON" term="TON"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[视差滚动实践]]></title>
