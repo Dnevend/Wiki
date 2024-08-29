@@ -102,7 +102,7 @@ CWV 包括：
 - 接着，可以使用 [`Chrome User Experience Report API`](https://developer.chrome.com/docs/crux) 去捞取线上过去 28 天的数据。
 - 发现数据有异常，可以使用 `DevTools` 工具进行具体代码定位分析。
 - 使用 [`Search Console’s Core Web Vitals report`](https://search.google.com/search-console/core-web-vitals) 查看网站功能整体情况。
-- 使用 `Web Vitals 扩展`方便的看页面核心指标情况。
+- 使用 [`Web Vitals 扩展`](https://chromewebstore.google.com/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma)方便的看页面核心指标情况。
 - 使用前端监控平台查看线上运行性能指标，全链路优化。
 
 ## 参考引用

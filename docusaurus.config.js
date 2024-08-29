@@ -90,7 +90,9 @@ const config = {
         title: 'Dnevend',
         logo: {
           alt: 'Avatar',
-          src: 'img/avatar.png',
+          src: 'img/avatar.webp',
+          width: 32,
+          height: 32
         },
         items: [
           {
