@@ -4,31 +4,43 @@
  */
 
 .heroBanner {
-  display: flex;
-  justify-items: center;
-  align-items: center;
+  padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  margin-top: -60px;
-  padding-top: 60px;
-  height: 100vh;
+
 }
 
-.colorBg {
+.zxfcl {
   position: absolute;
-  inset: 0;
+  right: 0;
+  bottom: 0;
+  width: 280px;
+  object-fit: conver;
 }
 
-.container {
-  z-index: 9;
+.ywysl {
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  width: 280px;
+  object-fit: conver;
 }
 
-/* @media screen and (max-width: 996px) {
+@media screen and (max-width: 996px) {
   .heroBanner {
     padding: 6rem;
   }
-} */
+
+  .zxfcl {
+    width: 180px;
+  }
+
+  .ywysl {
+    width: 180px;
+  }
+
+}
 
 .buttons {
   display: flex;

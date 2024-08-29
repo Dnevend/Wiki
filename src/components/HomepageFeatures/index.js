@@ -11,16 +11,16 @@ const FeatureList = [
     linkTo: '/docs/intro'
   },
   {
-    title: 'Blog',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: <></>,
-    linkTo: '/blog'
-  },
-  {
     title: 'Mark',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: <></>,
     linkTo: '/mark/2024'
+  },
+  {
+    title: 'Blog',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    description: <></>,
+    linkTo: '/blog'
   },
 ];
 
