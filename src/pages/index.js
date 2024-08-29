@@ -5,10 +5,12 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import styles from './index.module.css';
-import ZhanXiFuChangLiu from '../../static/img/zxfcl.png'
-import YunWoYiShangLeng from '../../static/img/ywysl.png'
+import ZhanXiFuChangLiu from '../../static/img/zxfcl.png';
+import YunWoYiShangLeng from '../../static/img/ywysl.png';
+
 const taglines = [
   '含哺而熙，鼓腹而游。',
+  '恐惧吞蚀灵魂',
   '一个人应该有能力换尿布、策划侵略、杀猪、给轮船掌舵、设计建筑物、写十四行诗、平衡收支、造墙、接骨、安慰临终之人、写菜单、发布命令、合作、独立工作、解方程、分析新问题、施肥、写电脑程序、做可口的饭菜、有效地战斗、英勇地死去。——罗伯特·海因莱因',
 ]
 
