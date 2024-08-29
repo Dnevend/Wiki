@@ -66,6 +66,7 @@ bootstrap your new apps, projects or landing sites!
 
     - [unDraw](https://undraw.co/illustrations)
     - [manypixels](https://www.manypixels.co/gallery)
+    - [Free SVG](https://freesvg.org/)
 
 SVG 设计资源生成
 
