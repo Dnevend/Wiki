@@ -43,7 +43,11 @@
   border-radius: 6px;
 }
 
+header {
+  height: 100vh;
+  margin-top: -60px;
+}
+
 main {
   position: relative;
-  flex: 1;
 }

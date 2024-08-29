@@ -28,7 +28,7 @@ function HomepageHeader() {
         </div>
       </div>
 
-      <img src={ZhanXiFuChangLiu} className={styles.zxfcl} />
+      <img src={ZhanXiFuChangLiu} alt="展席俯長流" className={styles.zxfcl} />
     </header>
   );
 }
@@ -43,7 +43,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
-        <img src={YunWoYiShangLeng} className={styles.ywysl} />
+        <img src={YunWoYiShangLeng} alt="雲臥衣裳冷" className={styles.ywysl} />
       </main>
     </Layout>
   );
