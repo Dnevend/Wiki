@@ -62,6 +62,8 @@ bootstrap your new apps, projects or landing sites!
 
 [Designing for many platforms](https://design.facebook.com/toolsandresources/devices/)
 
+[isometric](https://www.isocons.app/)(等距）图标库
+
 开源 SVG 插图
 
     - [unDraw](https://undraw.co/illustrations)
