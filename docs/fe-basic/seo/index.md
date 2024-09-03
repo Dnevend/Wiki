@@ -116,3 +116,7 @@ CWV 包括：
 - [指标性能优化](https://jonny-wei.github.io/blog/devops/performance/optimization.html) 🌟
 
 - [性能指标与采集](https://jonny-wei.github.io/blog/devops/performance/indicator.html)
+
+- [SEO 相关内容浅析](https://shimo.im/docs/7GVFl8rwU2snuY6X/read)
+
+- [SEO 规范（建议）](https://shimo.im/docs/aLMG4FtoLZ8JRoKC/read)
