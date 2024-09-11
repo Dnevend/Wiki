@@ -120,3 +120,5 @@ CWV 包括：
 - [SEO 相关内容浅析](https://shimo.im/docs/7GVFl8rwU2snuY6X/read)
 
 - [SEO 规范（建议）](https://shimo.im/docs/aLMG4FtoLZ8JRoKC/read)
+
+- [SEO 检查清单](https://university.tenten.co/t/seo/1341)
