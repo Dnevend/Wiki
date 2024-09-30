@@ -21,6 +21,8 @@ tags: [collection, website]
 
 [Aceternity UI](https://ui.aceternity.com/) 流行设计组件实现。
 
+[Animata](https://animata.design/)
+
 [Tailwind Components](https://tailwindcomponents.com/) Open source Tailwind UI components and templates to
 bootstrap your new apps, projects or landing sites!
 
