@@ -82,13 +82,6 @@ const config = {
         sidebarPath: require.resolve('./sidebars.mark.js'),
       },
     ],
-    [
-      '@docusaurus/plugin-google-analytics',
-      {
-        trackingID: 'G-JWBWXN9RCT',
-        anonymizeIP: true,
-      },
-    ],
   ],
 
   themeConfig:
