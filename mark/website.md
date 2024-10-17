@@ -21,6 +21,8 @@ tags: [collection, website]
 
 [Aceternity UI](https://ui.aceternity.com/) 流行设计组件实现。
 
+[Inspira UI - Vue](https://inspira-ui.com/) Vue 组件实现。
+
 [Animata](https://animata.design/)
 
 [Tailwind Components](https://tailwindcomponents.com/) Open source Tailwind UI components and templates to
@@ -106,6 +108,10 @@ SVG 设计资源生成
 [excalidraw](https://github.com/excalidraw/excalidraw) 手绘风格的在线画板。
 
 [Frame0](https://frame0.app/) 一个旨在帮助用户快速轻松地绘制手绘风格线框图的工具。
+
+[Tally Form](https://tally.so/) 表单工具。
+
+[Clarity](https://clarity.microsoft.com/) Clarity 是一款免费产品，可捕获用户使用网站的方式。
 
 ## 📈 运营增涨
 
