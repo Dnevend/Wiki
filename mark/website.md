@@ -131,6 +131,10 @@ SVG 设计资源生成
 
 [积薪](https://firewood.news/) 中文独立博客导航.
 
+## 💎 资源
+
+[Z-Library](https://topstip.com/the-worlds-largest-digital-library-z-library-newly-available-official-site-and-mirror/) Z-Library 最新可用网址及镜像入口。
+
 ## 📰 实事信息
 
 [Buzzing](https://www.buzzing.cc/) 用中文浏览国外社交媒体里的热门讨论。
