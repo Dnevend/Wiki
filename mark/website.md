@@ -68,6 +68,8 @@ bootstrap your new apps, projects or landing sites!
 
 [isometric](https://www.isocons.app/)(等距）图标库
 
+[Pure](https://purelanding.page/) 落地页灵感收集
+
 开源 SVG 插图
 
     - [unDraw](https://undraw.co/illustrations)
