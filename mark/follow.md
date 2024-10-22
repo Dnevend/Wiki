@@ -57,6 +57,8 @@ tags: [collection, subscribe]
 
 - [Owen](https://www.owenyoung.com/)
 
+- [Tangly](https://blog.tangly1024.com/)
+
 - [MoreRSS](https://morerss.com/zh.php)
 
   发现和翻译 RSS feeds，掌控自己的信息源，打开全球视野。

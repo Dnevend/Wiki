@@ -36,3 +36,7 @@ tags: [trade]
 - [CoinGlass](https://coinglass.com/)
 
 - [MACD 背离](https://xueqiu.com/7021965736/224675817)
+
+## 策略（仅参考）
+
+- [Vegas 隧道](https://blog.tangly1024.com/article/vegas-tunnel)
