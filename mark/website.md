@@ -44,6 +44,8 @@ bootstrap your new apps, projects or landing sites!
 
 ## 🎨 设计
 
+[CATJOURNEY](https://catjourney.life/) 可以帮助快速生成实用和可重复使用的 AI 图像。可以复制提示，在图像生成工具中生成图片。
+
 [界面灵感](https://uxchi.notion.site/881b4c0179a74935a3f607ad3521cdb5) Web/App/Email/Others 灵感类网站合集.
 
 [Sass Pages](https://saaspages.xyz/) 专注登陆页网站的集合.
