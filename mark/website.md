@@ -97,6 +97,8 @@ SVG 设计资源生成
 
 [Purple Photo](https://purple-photo.web.app/) “在几秒钟内创建漂亮的屏幕截图和帖子，无需任何设计技能” 截图美化、文章封面图制作工具.
 
+[Text Behind Image](https://textbehindimage.rexanwong.xyz/) 创建文字显示在主体和背景之间的工具.
+
 [Tiny PNG](https://tinypng.com/) 图片压缩.
 
 [Record Screen](https://recordscreen.io/) 直接使用浏览器录屏.
