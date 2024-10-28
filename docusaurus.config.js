@@ -9,7 +9,7 @@ const darkTheme = themes.dracula;
 const config = {
   title: '小学後生',
   titleDelimiter: '·',
-  tagline: '00后全栈工程师 | 让可能性发生',
+  tagline: '在战争中学习战争',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

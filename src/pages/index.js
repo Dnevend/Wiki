@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="全栈工程师｜主前端｜区块链深耕｜让可能性发生">
+      description="在战争中学习战争">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
