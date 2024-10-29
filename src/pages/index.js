@@ -9,6 +9,7 @@ import ZhanXiFuChangLiu from '../../static/img/zxfcl.png';
 import YunWoYiShangLeng from '../../static/img/ywysl.png';
 
 const taglines = [
+  '在战争中学习战争',
   '恐惧吞蚀灵魂',
   '聪明意味着把事情想清楚，愚蠢意味着直接给出结论而逃避思考。',
   '你不能搞混两样东西，一是你终将胜利的信念——这是你最输不起的；二是训练自己直面残酷现实——无论现实多残酷。',
