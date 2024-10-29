@@ -9,7 +9,7 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
         <item>
-            <title><![CDATA[为革命保护注意力]]></title>
+            <title><![CDATA[为革命保护“视”力]]></title>
             <link>https://dnevend.site/blog/attention-and-extension</link>
             <guid>https://dnevend.site/blog/attention-and-extension</guid>
             <pubDate>Mon, 28 Oct 2024 00:00:00 GMT</pubDate>
@@ -35,7 +35,7 @@
 <p>  在插件阵营，Webkit（Chrome、Edge、Safari、360...）和 Gecko（Firefox）两种不同内核的浏览器分占两壁江山。开发模式也存在差异，好在已有成熟的框架可以兼容开发，能省去不少开发前的琐事。</p>
 <p><a href="https://www.plasmo.com/" target="_blank" rel="noopener noreferrer">Plasmo (10.5k)</a> 和 <a href="https://wxt.dev/" target="_blank" rel="noopener noreferrer">WXT (4.4k)</a> 对 Typescript 和多种前端框架都做了支持，可以根据自己的技术偏好来进行选择。</p>
 <p>只因为是先了解到了 WXT，所以这个插件就基于 WXT 来进行开发。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="插件构成">插件构成<a class="hash-link" aria-label="插件构成的直接链接" title="插件构成的直接链接" href="https://dnevend.site/blog/attention-and-extension#%E6%8F%92%E4%BB%B6%E6%9E%84%E6%88%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="插件构成">插件构成<a class="hash-link" aria-label="插件构成的直接链接" title="插件构成的直接链接" href="https://dnevend.site/blog/attention-and-extension#%E6%8F%92%E4%BB%B6%E6%9E%84%EF%BF%BD%E6%88%90">​</a></h3>
 <ul>
 <li>
 <p>Manifest.json 配置文件：定义插件的基本信息和权限。</p>
