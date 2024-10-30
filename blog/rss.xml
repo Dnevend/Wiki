@@ -20,13 +20,13 @@
 更深处的原因，则是这些自己对于「存在」的焦虑，所以任何社交媒体/工具的反馈，总是能第一时间得到自己关注及行动，以便再次确认自己「存在」且「有价值」。”
 —— 产品沉思录 Vol.029</p>
 </blockquote>
-<p><img decoding="async" loading="lazy" src="https://dnevend.site/assets/images/cover-8af453851938e5d128a850b86a1b6a57.png" width="1400" height="560" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://dnevend.site/assets/images/cover-742e56959b0b74e40936ad947048c181.png" width="1400" height="560" class="img_ev3q"></p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&amp;id=1996073639&amp;auto=1&amp;height=66"></iframe>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="前言">前言<a class="hash-link" aria-label="前言的直接链接" title="前言的直接链接" href="https://dnevend.site/blog/attention-and-extension#%E5%89%8D%E8%A8%80">​</a></h2>
 <p>  信息成瘾和注意力的夺取，在互联网上，平台和用户之间互相形成了彼此同构的势力：
-平台通过设计产品的细节给用户以信息反馈（如小红点，精准的内容推荐）使用户养成对这种反馈机制的习惯，来保存用户的活跃度；
+平台通过设计产品的细节给用户以信息反馈（如小红点，精准的内容推荐）使用户养成对这种反馈机制的习惯，来保持用户的活跃度；
 从用户角度，为了更多的流量的媒体和帐号，在发布的内容中精心的挑选和设计，穿插一些可能无关联甚至吸引性的图片。
-图片的滥用和视频的干扰，形成了一种噪音，使得纯文字的阅读和表达能力在这视觉的转移运动中逐渐削弱。</p>
+图片的滥用和视频的干扰，形成了一种噪音，使得纯文字的阅读能力和信息的表达深度在这视觉的转移运动中逐渐削弱。</p>
 <p>  如何获取更多的注意力主动权，保护自己的时间和行为价值，就像做眼保健操一样，是在“课前”需要逐渐的养成良好习惯。</p>
 <p>  另外推特这样的内容开放的平台，在公共场合浏览时，有可能跳出一两条不合时宜的图片，让自己老脸一红或措手不及。</p>
 <p>  因为这样的出发点，顺手也想尝试下浏览器插件的开发，便产生了 <a href="https://github.com/dnevend/x-comfort-browse/" target="_blank" rel="noopener noreferrer">X-Comfort-Browser</a> 这个逛推特的小工具。</p>
@@ -35,7 +35,7 @@
 <p>  在插件阵营，Webkit（Chrome、Edge、Safari、360...）和 Gecko（Firefox）两种不同内核的浏览器分占两壁江山。开发模式也存在差异，好在已有成熟的框架可以兼容开发，能省去不少开发前的琐事。</p>
 <p><a href="https://www.plasmo.com/" target="_blank" rel="noopener noreferrer">Plasmo (10.5k)</a> 和 <a href="https://wxt.dev/" target="_blank" rel="noopener noreferrer">WXT (4.4k)</a> 对 Typescript 和多种前端框架都做了支持，可以根据自己的技术偏好来进行选择。</p>
 <p>只因为是先了解到了 WXT，所以这个插件就基于 WXT 来进行开发。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="插件构成">插件构成<a class="hash-link" aria-label="插件构成的直接链接" title="插件构成的直接链接" href="https://dnevend.site/blog/attention-and-extension#%E6%8F%92%E4%BB%B6%E6%9E%84%EF%BF%BD%E6%88%90">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="插件构成">插件构成<a class="hash-link" aria-label="插件构成的直接链接" title="插件构成的直接链接" href="https://dnevend.site/blog/attention-and-extension#%E6%8F%92%E4%BB%B6%E6%9E%84%E6%88%90">​</a></h3>
 <ul>
 <li>
 <p>Manifest.json 配置文件：定义插件的基本信息和权限。</p>
