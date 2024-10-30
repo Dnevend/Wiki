@@ -16,6 +16,8 @@ const taglines = [
   '一个人应该有能力换尿布、策划侵略、杀猪、给轮船掌舵、设计建筑物、写十四行诗、平衡收支、造墙、接骨、安慰临终之人、写菜单、发布命令、合作、独立工作、解方程、分析新问题、施肥、写电脑程序、做可口的饭菜、有效地战斗、英勇地死去。',
 ]
 
+const emojis = ['👨‍💻', '👋', '🤯', '👾', '🏃‍♂️', '🎲']
+
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   const [showTagline, setShowTagline] = useState(0);
@@ -30,7 +32,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <button onClick={() => {
             setShowTagline(Math.floor(Math.random() * taglines.length));
-          }}>🎲</button>
+          }}>{emojis[Math.floor(Math.random() * emojis.length)]}</button>
         </div>
       </div>
 
