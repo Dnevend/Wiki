@@ -28,15 +28,15 @@
 从用户角度，为了更多的流量的媒体和帐号，在发布的内容中精心的挑选和设计，穿插一些可能无关联甚至吸引性的图片。
 图片的滥用和视频的干扰，形成了一种噪音，使得纯文字的阅读能力和信息的表达深度在这视觉的转移运动中逐渐削弱。</p>
 <p>  如何获取更多的注意力主动权，保护自己的时间和行为价值，就像做眼保健操一样，是在“课前”需要逐渐的养成良好习惯。</p>
-<p>  另外推特这样的内容开放的平台，在公共场合浏览时，有可能跳出一两条不合时宜的图片，让自己老脸一红或措手不及。</p>
-<p>  因为这样的出发点，顺手也想尝试下浏览器插件的开发，便产生了 <a href="https://x-comfort-browser.dnevend.site/" target="_blank" rel="noopener noreferrer">X-Comfort-Browser</a> 这个小工具。</p>
+<p>  另外推特这样的内容开放的平台，在公共场合浏览时，有时跳出一两条不合时宜的图片，让自己老脸一红或措手不及。</p>
+<p>  因为这样的出发点，顺手也想尝试下浏览器插件的开发，便产生了 <a href="https://x-comfort-browser.dnevend.site/" target="_blank" rel="noopener noreferrer">X-Comfort-Browser</a> 这个小工具，用来解决上述场景的问题。</p>
 <p><img decoding="async" loading="lazy" src="https://dnevend.site/assets/images/blur-50-ed011045c46cba04e4c631b7ace9257d.png" width="1280" height="800" class="img_ev3q">
 <img decoding="async" loading="lazy" src="https://dnevend.site/assets/images/blur-none-c6127d8882e64d638d71fe0a72f2fb1d.png" width="1280" height="800" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="开发">开发<a class="hash-link" aria-label="开发的直接链接" title="开发的直接链接" href="https://dnevend.site/blog/attention-and-extension#%E5%BC%80%E5%8F%91">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="框架选择">框架选择<a class="hash-link" aria-label="框架选择的直接链接" title="框架选择的直接链接" href="https://dnevend.site/blog/attention-and-extension#%E6%A1%86%E6%9E%B6%E9%80%89%E6%8B%A9">​</a></h3>
-<p>  在插件阵营，Webkit（Chrome、Edge、Safari、360...）和 Gecko（Firefox）两种不同内核的浏览器分占两壁江山。开发模式也存在差异，好在已有成熟的框架可以兼容开发，能省去不少开发前的琐事。</p>
-<p><a href="https://www.plasmo.com/" target="_blank" rel="noopener noreferrer">Plasmo (10.5k)</a> 和 <a href="https://wxt.dev/" target="_blank" rel="noopener noreferrer">WXT (4.4k)</a> 对 Typescript 和多种前端框架都做了支持，可以根据自己的技术偏好来进行选择。</p>
-<p>只因为是先接触到了 WXT，所以该插件就基于 WXT 来进行了开发。</p>
+<p>  在插件阵营，Webkit（Chrome、Edge、Safari、360...）和 Gecko（Firefox）两种不同内核的浏览器分占两壁江山。开发模式也存在差异，好在有成熟的框架可以对两者兼容，能省去不少开发的琐事。</p>
+<p>目前主流的插件开发框架 <a href="https://www.plasmo.com/" target="_blank" rel="noopener noreferrer">Plasmo (10.5k)</a> 和 <a href="https://wxt.dev/" target="_blank" rel="noopener noreferrer">WXT (4.4k)</a> 对 Typescript 和多种前端框架都做了支持，开发时可以根据自己的技术偏好来进行选择。</p>
+<p>因为是先接触到了 WXT，所以该文章和插件就基于 WXT 来展开进行。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="插件构成">插件构成<a class="hash-link" aria-label="插件构成的直接链接" title="插件构成的直接链接" href="https://dnevend.site/blog/attention-and-extension#%E6%8F%92%E4%BB%B6%E6%9E%84%E6%88%90">​</a></h3>
 <ul>
 <li>
