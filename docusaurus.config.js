@@ -82,6 +82,12 @@ const config = {
         sidebarPath: require.resolve('./sidebars.mark.js'),
       },
     ],
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-JWBWXN9RCT',
+      },
+    ],
   ],
 
   themeConfig:
