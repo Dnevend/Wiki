@@ -37,9 +37,9 @@ export const Music = () => (
 
 &emsp;&emsp;如何获取更多的注意力主动权，保护自己的时间和行为价值，就像做眼保健操一样，是在“课前”需要逐渐的养成良好习惯。
 
-&emsp;&emsp;另外推特这样的内容开放的平台，在公共场合浏览时，有可能跳出一两条不合时宜的图片，让自己老脸一红或措手不及。
+&emsp;&emsp;另外推特这样的内容开放的平台，在公共场合浏览时，有时跳出一两条不合时宜的图片，让自己老脸一红或措手不及。
 
-&emsp;&emsp;因为这样的出发点，顺手也想尝试下浏览器插件的开发，便产生了 [X-Comfort-Browser](https://x-comfort-browser.dnevend.site/) 这个小工具。
+&emsp;&emsp;因为这样的出发点，顺手也想尝试下浏览器插件的开发，便产生了 [X-Comfort-Browser](https://x-comfort-browser.dnevend.site/) 这个小工具，用来解决上述场景的问题。
 
 ![](./blur-50.png)
 ![](./blur-none.png)
@@ -48,11 +48,11 @@ export const Music = () => (
 
 ### 框架选择
 
-&emsp;&emsp;在插件阵营，Webkit（Chrome、Edge、Safari、360...）和 Gecko（Firefox）两种不同内核的浏览器分占两壁江山。开发模式也存在差异，好在已有成熟的框架可以兼容开发，能省去不少开发前的琐事。
+&emsp;&emsp;在插件阵营，Webkit（Chrome、Edge、Safari、360...）和 Gecko（Firefox）两种不同内核的浏览器分占两壁江山。开发模式也存在差异，好在有成熟的框架可以对两者兼容，能省去不少开发的琐事。
 
-[Plasmo (10.5k)](https://www.plasmo.com/) 和 [WXT (4.4k)](https://wxt.dev/) 对 Typescript 和多种前端框架都做了支持，可以根据自己的技术偏好来进行选择。
+目前主流的插件开发框架 [Plasmo (10.5k)](https://www.plasmo.com/) 和 [WXT (4.4k)](https://wxt.dev/) 对 Typescript 和多种前端框架都做了支持，开发时可以根据自己的技术偏好来进行选择。
 
-只因为是先接触到了 WXT，所以该插件就基于 WXT 来进行了开发。
+因为是先接触到了 WXT，所以该文章和插件就基于 WXT 来展开进行。
 
 ### 插件构成
 
