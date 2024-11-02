@@ -19,7 +19,7 @@ const FeatureList = [
   {
     title: '博客',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: <>卖弄技术和文字</>,
+    description: <>最美的梨花即将被写出</>,
     linkTo: '/blog'
   },
 ];

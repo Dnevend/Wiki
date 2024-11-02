@@ -12,6 +12,14 @@
   overflow: hidden;
 }
 
+.heroTitle {
+  font-size: 2rem;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+}
+
 .zxfcl {
   position: absolute;
   right: 0;
