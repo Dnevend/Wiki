@@ -29,7 +29,7 @@ function HomepageHeader() {
         </p>
         <div className={styles.buttons}>
           <button onClick={() => {
-            setShowTagline(Math.floor(Math.random() * taglines.length));
+            setShowTagline(index => index >= taglines.length - 1 ? 0 : index + 1);
           }}>🎲</button>
         </div>
       </div>
