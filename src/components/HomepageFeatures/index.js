@@ -5,21 +5,21 @@ import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
-    title: 'Wiki',
+    title: '知识库',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: <></>,
+    description: <>系统性再整理</>,
     linkTo: '/docs/intro'
   },
   {
-    title: 'Mark',
+    title: '记录',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: <></>,
+    description: <>有营养的信息和内容</>,
     linkTo: '/mark/2024'
   },
   {
-    title: 'Blog',
+    title: '博客',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: <></>,
+    description: <>卖弄技术和文字</>,
     linkTo: '/blog'
   },
 ];

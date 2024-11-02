@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 说明
+# 知识库
 
 - 对既有知识进行一次回顾和审视，补充忽略的细节。
 
@@ -15,8 +15,6 @@ sidebar_position: 1
 > 成为专业工程师的基础编程素养。
 
 ### [区块链](/docs/category/区块链)
-
-> Web3 技术点学习记录。
 
 ### [DevOps](/docs/category/devops)
 

@@ -128,7 +128,7 @@ const config = {
             title: 'SiteMap',
             items: [
               {
-                label: 'Intro',
+                label: 'Wiki',
                 to: '/docs/intro',
               },
               {
