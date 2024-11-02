@@ -30,7 +30,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <button onClick={() => {
             setShowTagline(index => index >= taglines.length - 1 ? 0 : index + 1);
-          }}>🎲</button>
+          }}>Next</button>
         </div>
       </div>
 
@@ -44,7 +44,7 @@ export default function Home() {
 
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`Welcome`}
       description="在战争中学习战争">
       <HomepageHeader />
       <main>
