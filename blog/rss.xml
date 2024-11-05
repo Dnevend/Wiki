@@ -23,10 +23,11 @@
 <p><img decoding="async" loading="lazy" src="https://dnevend.site/assets/images/cover-742e56959b0b74e40936ad947048c181.png" width="1400" height="560" class="img_ev3q"></p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&amp;id=1996073639&amp;auto=1&amp;height=66"></iframe>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="前言">前言<a class="hash-link" aria-label="前言的直接链接" title="前言的直接链接" href="https://dnevend.site/blog/attention-and-extension#%E5%89%8D%E8%A8%80">​</a></h2>
-<p>  信息成瘾和注意力的夺取，在互联网上，平台和用户之间互相形成了彼此同构的势力：
-平台通过设计产品的细节给用户以信息反馈（如小红点，精准的内容推荐）使用户养成对这种反馈机制的习惯，来保持用户的活跃度；
-从用户角度，为了更多的流量的媒体和帐号，在发布的内容中精心的挑选和设计，穿插一些可能无关联甚至吸引性的图片。
-图片的滥用和视频的干扰，形成了一种噪音，使得纯文字的阅读能力和信息的表达深度在这视觉的转移运动中逐渐削弱。</p>
+<p>  信息成瘾和注意力的夺取，在互联网平台和用户两者之间形成了相互同构的力量：
+从平台角度，通过对产品细节的设计，给用户以信息反馈（如小红点，精准的内容推荐）机制，使用户养成对这种反馈的习惯，来保持用户的活跃度；
+从用户角度，为了更多的流量的媒体和帐号，在发布的内容中精心的挑选和设计或穿插一些可能无关联甚至吸引性的图片。
+大量无关联的配图造成了注意力的分散使得信息获取的过程受到干扰，无法专注。
+图片和媒体资源的滥用，形成了一种噪音，使得纯文字的阅读能力和信息的表达深度在这视觉的转移运动中逐渐削弱。</p>
 <p>  如何获取更多的注意力主动权，保护自己的时间和行为价值，就像做眼保健操一样，是在“课前”需要逐渐的养成良好习惯。</p>
 <p>  另外推特这样的内容开放的平台，在公共场合浏览时，有时跳出一两条不合时宜的图片，让自己老脸一红或措手不及。</p>
 <p>  因为这样的出发点，顺手也想尝试下浏览器插件的开发，便产生了 <a href="https://x-comfort-browser.dnevend.site/" target="_blank" rel="noopener noreferrer">X-Comfort-Browser</a> 这个小工具，用来解决上述场景的问题。</p>
