@@ -125,20 +125,12 @@ const config = {
         style: 'light',
         links: [
           {
-            title: 'SiteMap',
+            title: 'More',
             items: [
               {
-                label: 'Wiki',
-                to: '/docs/intro',
-              },
-              {
-                label: 'Mark',
-                to: '/mark/2024',
-              },
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+                label: 'Friend Links',
+                to: '/friend-links',
+              }
             ],
           },
           {
