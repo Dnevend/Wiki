@@ -128,13 +128,21 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Friend Links',
+                label: '友链',
                 to: '/friend-links',
+              },
+              {
+                label: '留言',
+                href: 'https://tally.so/r/nPBJRe'
+              },
+              {
+                label: 'RSS',
+                href: 'https://dnevend.site/blog/rss.xml'
               }
             ],
           },
           {
-            title: 'Links',
+            title: 'Accounts',
             items: [
               {
                 label: '即刻',
@@ -148,7 +156,6 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/Dnevend',
               },
-              { label: 'RSS', href: 'https://dnevend.site/blog/rss.xml' }
             ],
           },
         ],
