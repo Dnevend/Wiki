@@ -9,6 +9,7 @@ import ZhanXiFuChangLiu from '../../static/img/zxfcl.png';
 import YunWoYiShangLeng from '../../static/img/ywysl.png';
 
 const taglines = [
+  '江湖的孩子，江湖边老',
   '在战争中学习战争',
   '不要恐惧，恐惧吞蚀灵魂',
   '聪明意味着把事情想清楚，愚蠢意味着直接给出结论而逃避思考。',
